@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96c1675a-d9b6-489e-80da-d2ddc1cc0442">
+  <producedTypes>
+    <selectionType typeId="1fc34400-6d51-4dd1-b603-5e65de23f482" valueTypeId="6c1df374-81ad-4e88-b1fa-f44c206f4895"/>
+    <listType typeId="e2b225ad-4031-4e54-a046-43f09f373f1c" valueTypeId="5f6ffc87-1884-4b4c-8264-2d811308ba85"/>
+    <managerType typeId="85d58800-dfbf-48c1-a2e7-9744801b4578" valueTypeId="2c2a53cf-f43c-4b37-abd9-2f8a819d2762"/>
+    <recordSetType typeId="47d97917-42db-4a56-ab2d-070a1ed5f7e3" valueTypeId="ddbb71c7-60be-4741-988b-a7fc3b1a11a1"/>
+    <recordKeyType typeId="8dbf7f91-8926-4cd2-bcc4-688163d0102f" valueTypeId="d9a46501-ee6a-4989-b468-7f942d7585a9"/>
+    <recordType typeId="68e5f893-ef34-4280-aa95-88bdf03c8b76" valueTypeId="c7bbd232-b6a6-41ab-bb4c-fe7086e51a21"/>
+    <recordManagerType typeId="0de30b82-8230-4038-8069-230d57dcf4b5" valueTypeId="97226e10-de06-44ad-8d25-1d471439b0fc"/>
+  </producedTypes>
+  <name>ЭП_ИтоговыеПоказателиСотрудниковПоПроектам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Итоговые показатели сотрудников по проектам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="83edeaac-6fe1-4496-9dd6-2a2e0c9acbe2">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6dfe1aa7-903c-455f-bbfa-c481873f145f">
+    <name>КоэффициентЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент загрузки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5c4269fd-b783-4986-9b0d-bfcc5f434837">
+    <name>ГруппаПрофилей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа профилей</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_ГруппыРасчетныхПрофилей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a3f4c62d-ee2c-4e1f-a9e7-317ace3ea810">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5d5a00a3-281b-4f65-92ad-9a0a622edb30">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

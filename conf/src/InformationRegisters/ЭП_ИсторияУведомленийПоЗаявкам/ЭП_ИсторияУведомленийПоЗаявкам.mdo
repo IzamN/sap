@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1748232-f0d9-47cd-8f3f-9f7498a1f346">
+  <producedTypes>
+    <selectionType typeId="d425654a-ba44-46c9-a83e-1a98ffd97e68" valueTypeId="6fd78772-f7fb-4350-abb1-0a3c669258e4"/>
+    <listType typeId="616f748d-bdff-47c5-8aa5-41aeda928e62" valueTypeId="f55cdeca-f9f3-4356-9a58-2012c2225136"/>
+    <managerType typeId="00416260-0287-4436-a642-c0be8380ab9c" valueTypeId="e6b0e9be-39f3-472e-a27b-629470908c77"/>
+    <recordSetType typeId="34698b76-782e-4e3c-8378-a09c61c700b8" valueTypeId="742d60f9-57be-473a-9ac5-da314ffad3ac"/>
+    <recordKeyType typeId="153e78cc-3dd6-40de-bbba-aaac4a7a4142" valueTypeId="14b530e8-9a5e-4b04-8587-1d7276e0553e"/>
+    <recordType typeId="12181bfa-70cd-447b-9fc9-a98bfa9b6053" valueTypeId="c1743b0c-67d2-4b1c-88c5-13e44ff1c9bc"/>
+    <recordManagerType typeId="06423048-39a4-4c90-9519-3638730686a2" valueTypeId="e93bd162-5b74-4aed-af5c-f19dcd2b6512"/>
+  </producedTypes>
+  <name>ЭП_ИсторияУведомленийПоЗаявкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>История уведомлений по заявкам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="993cd1be-31be-4077-807b-150e5bd6ec14">
+    <name>Оповещен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="56062e4d-d099-46a1-9715-f5680ffc3563">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="101fde35-fbe0-4bf3-88cd-b2300f314e5a">
+    <name>Заявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка</value>
+    </synonym>
+    <type>
+      <types>BusinessProcessRef.ЭП_Заявки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="55e9a71e-8667-4fbb-8d01-f792aa703612">
+    <name>СтатусЗаявки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус заявки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЭП_СтатусыЗаявок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

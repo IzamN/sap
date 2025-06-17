@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd30a73c-e7f5-4b82-9804-13f976885314">
+  <producedTypes>
+    <objectType typeId="47788c9c-df08-4f62-8138-4e22317a077d" valueTypeId="3a6e0ae6-5337-40b3-9f4b-d7c83e84cf60"/>
+    <managerType typeId="81c5ae63-cb80-4296-a869-302b948866b0" valueTypeId="b59ec1bb-462c-4efa-9773-54c2d9aac39a"/>
+  </producedTypes>
+  <name>ЭП_ПроцентнаяЗагруженностьСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процентная загруженность сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЭП_ПроцентнаяЗагруженностьСотрудников.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ЭП_ПроцентнаяЗагруженностьСотрудников.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="1d4e8051-65d1-4523-abe8-3b72eea9f136">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="907b3e61-036f-4636-8221-139230b04f0b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

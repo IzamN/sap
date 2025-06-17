@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0804d02-c959-41d5-ad1e-506f88a00b8c">
+  <producedTypes>
+    <selectionType typeId="d097793c-365a-4634-a8c7-0b7ef8e545c3" valueTypeId="94ef4bf2-865d-4db1-a3ff-105504d8e870"/>
+    <listType typeId="3d94059a-571b-4dbc-b29b-c1fda8e41dfb" valueTypeId="e28cf0c7-7e0b-4127-81a7-118b655b5852"/>
+    <managerType typeId="9ece7cdf-460f-4302-bcec-abe272f029e9" valueTypeId="f11e026d-dd80-4e6a-84c0-e8b1bb9b3ecf"/>
+    <recordSetType typeId="5e51cebb-1fa2-4c13-be34-7a093788ee58" valueTypeId="14825c75-c4f5-4a98-9530-cfa220965f69"/>
+    <recordKeyType typeId="1e34d55b-0ba6-45d6-9a51-863eb00bf9fd" valueTypeId="848376ac-e4d0-4c87-b731-198576b4e8bd"/>
+    <recordType typeId="72c7cc2b-a2ee-41cb-98eb-a2587e9ddf77" valueTypeId="d1e66703-7be8-4c93-9197-65480937bce4"/>
+  </producedTypes>
+  <name>ЭП_УчетПереработок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет переработок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="d058936c-a3f7-4c31-9f43-d998c30bb56f">
+    <name>УтвержденныеЧасы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утвержденные часы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="e1c5dcb3-52a5-4f34-85dc-4a75046323ea">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РазделыПроекта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e68880d3-2c6d-45b1-a8ec-d9d024b3e459">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="6f0854cc-20f1-43e1-81f5-9f502bdddfc7">
+    <name>ТехническийПроект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Технический проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТехническиеПроекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2f8c5b7a-a13d-45c4-8240-8b98974e889e">
+    <name>Задача</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиПроцесса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1c3d1cc3-ffdb-4bf4-b668-cfc2b86ec229">
+    <name>ДатаПереработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата переработки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

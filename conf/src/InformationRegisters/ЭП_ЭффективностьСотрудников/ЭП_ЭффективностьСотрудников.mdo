@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b835107d-486e-46bc-96dd-545aa9d24389">
+  <producedTypes>
+    <selectionType typeId="4c1ce5d6-02dd-41a1-83be-54349296e18f" valueTypeId="6330bd84-58ed-4d78-9fcc-0432b07330f0"/>
+    <listType typeId="5d346322-b529-489a-9279-85925a2b739e" valueTypeId="a8e7f40a-c678-4a30-bfc4-69107fcf383f"/>
+    <managerType typeId="a13372e4-b857-4318-a3cc-efcab833d1ae" valueTypeId="fee12427-bb0b-4725-8f24-a228e142c145"/>
+    <recordSetType typeId="af831917-39b1-4a34-961b-c94432ebfb92" valueTypeId="40aa6726-7b60-482b-9eb3-3307aa8ada7e"/>
+    <recordKeyType typeId="d1b777ca-7006-4ac8-874e-ecbbc630dd1a" valueTypeId="2957e5e7-b011-49c6-8f81-b36dc0a04a19"/>
+    <recordType typeId="a266685b-26d2-463b-8456-26f184ed4b62" valueTypeId="48073b90-497a-4b0d-a129-e00719a552d4"/>
+    <recordManagerType typeId="c5148bec-843f-4fd8-bafc-c1de525debf1" valueTypeId="65483fcd-45e2-40e4-b780-cc50b0fb9629"/>
+  </producedTypes>
+  <name>ЭП_ЭффективностьСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Эффективность сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="b69d7f98-e9f2-4642-9053-8a0d6930aed0">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ЭП_ПоказателиЭффективностиСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>InformationRegister.ЭП_ЭффективностьСотрудников.Dimension.Показатель</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="629b4547-a97a-44da-921b-6473bb1cded0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="b3400ac1-d165-43a1-86cb-78019ebacda8">
+    <name>ПериодОценивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период оценивания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="507c5cc9-8c51-4301-9b0c-4e31550b9763">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="456fb695-f9d6-4f0b-90a8-da4e8a4316cb">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e8559e0f-97fb-4572-8c8a-41fffc9901ba">
+    <name>ПрофильРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль расчета</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_ПрофилиРасчетаРезультативности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2ced159a-dd61-4a18-ab6b-fa854391e7f0">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="de6310bf-e6a1-4fa7-a5dd-20004bac6676">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ЭП_ПоказателиЭффективностиСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

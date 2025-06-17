@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfc62788-df3e-4bae-9fa3-a659380d2cd7">
+  <producedTypes>
+    <selectionType typeId="ca517f87-7843-4c85-8f0a-27a01ba978e1" valueTypeId="3a191904-5160-423f-9f0f-9f986bc3d9ba"/>
+    <listType typeId="9a9a21ba-5f65-49b5-90fc-c048cd82293c" valueTypeId="3c298c7a-92b6-433d-829d-2285394cbb87"/>
+    <managerType typeId="5ac71107-e58f-4a89-85cb-bf546a6cacb7" valueTypeId="7a9c3722-740f-4aef-a1c8-6a3239739d0f"/>
+    <recordSetType typeId="91404255-91f7-40ce-b2ac-1e474a9a069e" valueTypeId="0355af01-8703-4d32-8aa4-cd3964d3ebba"/>
+    <recordKeyType typeId="e44d50ce-01ba-441b-b56f-5ae00316b999" valueTypeId="328ea4ee-c0da-446a-af41-0af40b42c003"/>
+    <recordType typeId="85020165-0eec-45df-98a4-50a1d2079675" valueTypeId="e1cdc7d2-1e81-4ffd-abd7-d859de7c50d5"/>
+  </producedTypes>
+  <name>ЭП_РасчитанныйПланФактПоКомпенсациямПоПереработкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчитанный план факт по компенсациям по переработкам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="e1716b83-e652-41fa-ac28-95600e2988cd">
+    <name>ЧасыПлан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часы план</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="497c2b79-48f1-41fb-b9c6-5e6044598959">
+    <name>ЧасыФакт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Часы факт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="dcc3a310-96f7-43a3-b6ad-6d0a8b36f33e">
+    <name>ДеньРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>День регистрации</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="1803026e-59ce-4d0d-905a-7f41471ca521">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="83c7a2a8-fe90-4592-97f2-2e041158a440">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

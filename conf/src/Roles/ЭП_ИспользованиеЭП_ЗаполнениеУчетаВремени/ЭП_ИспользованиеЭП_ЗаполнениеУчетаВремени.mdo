@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4e7fe6ff-663c-43b8-a953-e40f3e5f4409">
+  <name>ЭП_ИспользованиеЭП_ЗаполнениеУчетаВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование обработки &quot;Заполнение учета времени&quot;</value>
+  </synonym>
+</mdclass:Role>

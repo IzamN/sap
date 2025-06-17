@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link></head><body class="">
+<h2><font size="4">Назначение отчета</font></h2>
+<p><font size="3">Отчет предназначен для анализа проектов компании, включая обычные проекты и проекты сопровождения.</font></p>
+
+<h3><font size="3"><br></font></h3>
+<h3><font size="3">Варианты отчета</font></h3>
+<ul><li><font size="3">Актирование этапов</font></li>
+</ul><h3><font size="3"><br></font></h3>
+<h3><font size="3">Условия формирования отчета</font></h3>
+<p><font size="3"><br></font></p><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<p><font size="3"><b>Отчет выводит этапы проектов, которые удовлетворяют одному из следующих условий</b>:</font></p></blockquote>
+<ol><ol><li><font size="3">Этап проекта был помещен в архив в течение периода формирования отчета.</font></li>
+<li><font size="3">Дата окончания этапа попадает в период формирования отчета.</font></li>
+<li><font size="3">Этап не был добавлен в архив и его дата окончания меньше даты окончания периода формирования отчета.</font></li></ol></ol><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<p><font size="3"><br></font></p>
+<p><font size="3">Для проектов сопровождения отчет также выводит нераспределенные трудозатраты по техническим проектам, хотя бы один этап которых был выведен в отчет, если:</font></p></blockquote>
+<ol><ol><li><font size="3">Технический проект был добавлен в архив, и его дата окончания попадает в период формирования отчета.</font></li>
+<li><font size="3">Технический проект не был добавлен в архив.</font></li></ol></ol><blockquote style="margin: 0 0 0 40px; border: none; padding: 0px;">
+<h3><font size="3">Цветовая индикация поля "Выручка"</font></h3></blockquote>
+<ul><ul><li><font size="3"><span style="background-color: #F37324; color: white;">   </span> Оранжевый - этап указан в акте реализации, акт выпущен (проведен).</font></li>
+<li><font size="3"><span style="background-color: #72AF43; color: white;">   </span> Зеленый - этап указан в акте реализации, акт оплачен (установлена дата оплаты).</font></li>
+<li><font size="3"><span style="background-color: #F8CC1B; color: white;">   </span> Желтый - этап указан в акте реализации, акт получен (установлена дата получения).</font></li>
+<li><font size="3"><span style="background-color: #FFFFFF; border: 1px solid black;">   </span> Белый - для этапа не указан акт или он не проведен.</font></li></ul></ul><h3><font size="3">Техническая реализация</font></h3>
+
+<div style="font-family: Tahoma;">
+  
+<p style="font-size: small;"><br></p>
+<p><font size="3">В отчет попадают все этапы проектов <strong>не сопровождения</strong>, удовлетворяющие условиям выше и не являющиеся помеченными на удаление (РазделыПроекта, Проект):</font></p>
+  
+  
+<ul><li><font size="3">Поля <strong>"Проект сопровождение"</strong>, <strong>"Проект"</strong> заполняются из экземпляров справочника <strong>"Проекты"</strong></font></li>
+    
+<li><font size="3">Поля <strong>"Этап"</strong>, <strong>"Дата начала этапа"</strong>, <strong>"Дата окончания этапа (по договору)"</strong>, <strong>"Плановые трудозатраты"</strong>, <strong>"Плановая выручка"</strong>, <strong>"Плановый субподряд"</strong> заполняются из экземпляров справочника <strong>"РазделыПроекта"</strong></font></li>
+    
+<li><font size="3">Поле <strong>"Плановая валовая прибыль"</strong> вычисляется как: <strong>"Плановая выручка"</strong> минус <strong>"Плановый субподряд"</strong></font></li>
+    
+<li><font size="3">Значение для поля <strong>"Фактические трудозатраты"</strong> берется из регистра <strong>"УчетВремени"</strong> по измерению <strong>"Проект"</strong> (при расчете не участвуют сотрудники с договором ГПХ)</font></li>
+    
+<li><font size="3">Поле <strong>"Дата окончания этапа (прогнозная)"</strong> берет значение из регистра сведений <strong>"ЭП_ОкончаниеЭтапов"</strong> на основе:
+      </font>
+<ul><li><font size="3">Этапа проекта</font></li>
+        
+<li><font size="3">Текущей даты</font></li>
+      </ul><font size="3">
+      (значение вносится в регистр из формы элемента "РазделыПроекта")
+    </font></li>
+    
+<li><font size="3">Поле <strong>"Фактическая выручка"</strong> заполняется на основе регистра <strong>"ЭП_РеализацияУслуг"</strong> по этапу</font></li>
+    
+<li><font size="3">Поле <strong>"Фактический субподряд"</strong> заполняется из регистра <strong>"ЭП_ПоступлениеУслуг"</strong> по этапу</font></li>
+    
+<li><font size="3">Поле <strong>"Фактическая валовая прибыль"</strong> вычисляется как: <strong>"Фактическая выручка"</strong> минус <strong>"Фактический субподряд"</strong></font></li>
+  </ul><p><font size="3"><br></font></p>
+<p><font size="3">В отчет попадают все этапы проектов <strong>сопровождения</strong>, удовлетворяющие условиям выше и не являющиеся помеченными на удаление (РазделыПроекта, Проект):</font></p>
+  
+  
+<ul><li><font size="3">Поля заполняются аналогично проектам не сопровождения из тех же источников</font></li>
+    
+<li><font size="3">Особенности для проектов сопровождения:
+      </font>
+<ul><li><font size="3">Поле <strong>"Фактические трудозатраты"</strong> берется из регистра <strong>"УчетВремени"</strong> по измерению <strong>"ТехническийПроект"</strong></font></li>
+        
+<li><font size="3">Поле <strong>"Дата окончания этапа (прогнозная)"</strong> берется из акта (не является реквизитом технического проекта)</font></li>
+        
+<li><font size="3">Поле <strong>"Фактический субподряд"</strong> заполняется из регистра <strong>"ЭП_ПоступлениеПроектыСопровождения"</strong> по измерению <strong>"ТехническийПроект"</strong></font></li>
+      </ul></li>
+  </ul><p><font size="3"><br></font></p>
+<p><font size="3">В отчет попадают <strong>проекты сопровождения без этапа</strong>, удовлетворяющие условиям выше:</font></p>
+  
+  
+<ul><li><font size="3">В таких строках заполняются только поля:
+      </font>
+<ul><li><strong><font size="3">"Проект"</font></strong></li>
+        
+<li><strong><font size="3">"Проект сопровождение"</font></strong></li>
+        
+<li><font size="3"><strong>"Фактические трудозатраты"</strong> (рассчитывается как сумма значений из регистров):
+          </font>
+<ul><li><strong><font size="3">"УчетВремени"</font></strong></li>
+            
+<li><strong><font size="3">"ЭП_ПоступлениеПроектыСопровождения"</font></strong></li>
+          </ul><font size="3">
+          для технических проектов, подчиненных проекту, у которых не указан акт реализации
+        </font></li>
+      </ul></li>
+  </ul></div></body></html>

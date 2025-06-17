@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94ba40aa-327c-4e67-a9a6-21cc2b86d6b8">
+  <producedTypes>
+    <selectionType typeId="a588a0ba-ae9f-4890-b4c8-8547e11be2af" valueTypeId="d609a5f1-6cf9-4a7e-9f88-75d0b7f90378"/>
+    <listType typeId="142b3da5-7840-47e5-affb-d3794ce9bb34" valueTypeId="9a71a3c7-a604-4b2b-84e5-b0c1841d53b0"/>
+    <managerType typeId="4f2f8e1f-3fc7-486d-9747-a1296cf5d78f" valueTypeId="5031ccb7-bfe1-49b5-b29a-0d635cfd0dfe"/>
+    <recordSetType typeId="c8900f25-1d53-411b-8e1d-a78604183210" valueTypeId="e1852577-b497-46b6-9b22-fb5fd0c1fadc"/>
+    <recordKeyType typeId="abf76470-38b6-4ba5-af01-84cc64d0dc26" valueTypeId="215e4b75-cecc-4f99-a935-c4a30d235352"/>
+    <recordType typeId="9342faae-1f21-42c9-9362-93b3a62c80f6" valueTypeId="7d129970-aafe-4e8f-9733-2eb36d256450"/>
+    <recordManagerType typeId="037b07c3-8634-45c9-9043-c07d47739c48" valueTypeId="25189afc-d960-4daf-9601-77df3a1857f5"/>
+  </producedTypes>
+  <name>УДАЛИТЬЭП_ПодтвержденныеЧасыПоСотрудникамВПроекте</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить Подтвержденные часы по сотрудникам в проекте</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="c128e5d7-cae2-45e8-ad00-f2ca0b98e76d">
+    <name>ДатаПодтверждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата подтверждения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="47db1f18-50df-4403-8a6e-89d5acc954b9">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2f0a45f8-e4d8-423b-a6f2-852066ce7381">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

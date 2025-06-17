@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5e6af0f-1ce4-46cf-ba95-33d51ef18b28">
+  <producedTypes>
+    <refType typeId="9b8731bf-72bd-4bac-882e-bf4551f3e19b" valueTypeId="1386598b-b735-4e5c-8cff-0b2fb5f479ec"/>
+    <listType typeId="15be2be8-ca51-4a10-92d8-b9d70f99601b" valueTypeId="40cbe5a0-1c0e-45f7-8c0b-3af856bb8b14"/>
+    <managerType typeId="660ccf6c-6cfe-4db6-81bf-9b0e71f23e04" valueTypeId="3096b25f-d029-4c62-a602-ec3f8b482118"/>
+  </producedTypes>
+  <name>ЭП_ГрадацияСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Градация сотрудников</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="fe320500-b2e4-4900-841e-9a27df62928e">
+    <name>Cadet</name>
+    <synonym>
+      <key>ru</key>
+      <value>Cadet</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2f16f4b9-924d-4af5-89bf-f12380986aad">
+    <name>JuniorMinus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Junior-</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4d638e1c-d0b2-4d95-9cf5-76bf0fea6529">
+    <name>Junior</name>
+    <synonym>
+      <key>ru</key>
+      <value>Junior</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ba032244-2a54-4f54-8436-8ae80e80c400">
+    <name>JuniorPlus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Junior+</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="7dafeea1-e527-436f-8044-339c68bc6adc">
+    <name>MiddleMinus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Middle-</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="86992bd3-f919-4e1b-9737-eb8d4c0ee6cc">
+    <name>Middle</name>
+    <synonym>
+      <key>ru</key>
+      <value>Middle</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0203c0d4-e9fc-4529-a259-fad9e1a95430">
+    <name>MiddlePlus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Middle+</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c7079828-24b0-4785-8991-ddd768524ceb">
+    <name>SeniorMinus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Senior-</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2f84a998-5ac1-470b-90dc-e28c72fca0db">
+    <name>Senior</name>
+    <synonym>
+      <key>ru</key>
+      <value>Senior</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="2e46387f-a962-4775-afc8-876642b15791">
+    <name>SeniorPlus</name>
+    <synonym>
+      <key>ru</key>
+      <value>Senior+</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

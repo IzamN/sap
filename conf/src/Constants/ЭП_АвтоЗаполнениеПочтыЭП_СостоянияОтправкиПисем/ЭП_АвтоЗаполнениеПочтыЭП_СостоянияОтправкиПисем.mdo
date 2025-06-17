@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ddd2503-b0a0-4400-a2b3-2b32036263ff">
+  <producedTypes>
+    <managerType typeId="90a569d3-b54d-4463-9ae1-04fe568db2c8" valueTypeId="8a95e06b-3774-47d1-bdfc-70ea4ea78640"/>
+    <valueManagerType typeId="4000015c-0f47-4d1a-adbf-05710a1100cc" valueTypeId="e12a5b11-85b6-4cbe-b67f-75145cdca349"/>
+    <valueKeyType typeId="f2baa8c3-a772-4ad6-868c-e062f9b65e63" valueTypeId="e2025ea6-ce22-4c19-8d75-79ef7593f1a2"/>
+  </producedTypes>
+  <name>ЭП_АвтоЗаполнениеПочтыЭП_СостоянияОтправкиПисем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Авто заполнение почты из справочника сотрудники</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

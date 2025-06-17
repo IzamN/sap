@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fec0f702-bddc-4658-9889-aceacf0bcc11">
+  <producedTypes>
+    <objectType typeId="77dd0b84-939a-4d3b-b484-708142e8c7e7" valueTypeId="82397469-0d16-4a2a-9c14-f41a05c23d0e"/>
+    <managerType typeId="a50b3d33-48a8-4c22-92f8-2b1ac1b5edd8" valueTypeId="1770b0d2-2355-47d5-81a6-38aeac70e5c2"/>
+  </producedTypes>
+  <name>ЭП_АРММоиЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>АРМ: Мои задачи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЭП_АРММоиЗадачи.Form.МоиЗадачи</defaultForm>
+  <forms uuid="a82fcb1b-7c7e-4607-9922-e6e802c164a7">
+    <name>МоиЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мои задачи</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1c780597-5dbf-4ad5-aaed-70d2bf872443">
+    <name>УсловноеОформлениеМоиЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условное оформление мои задачи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

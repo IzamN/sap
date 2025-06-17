@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="039bc00d-5bb4-4a88-bb4c-c62e3650c30b">
+  <producedTypes>
+    <objectType typeId="01eb57bb-419d-4b17-9451-b32e85d052e2" valueTypeId="1acd3558-736d-4119-b0e5-8608a78f0d9f"/>
+    <managerType typeId="31004229-260a-47b9-ad8f-2c79e062682f" valueTypeId="6bc868f4-0eca-48c0-af36-4a5054052961"/>
+  </producedTypes>
+  <name>ЭП_ВыплатыПремий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплаты премий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЭП_ВыплатыПремий.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="d7e1f188-b70c-45ea-bef3-5cf638853fea">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

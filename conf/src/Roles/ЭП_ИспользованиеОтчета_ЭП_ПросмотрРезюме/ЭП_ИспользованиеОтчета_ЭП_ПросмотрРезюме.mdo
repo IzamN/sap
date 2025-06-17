@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f7a506a-7fcc-4067-8af9-bf7144a00847">
+  <name>ЭП_ИспользованиеОтчета_ЭП_ПросмотрРезюме</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование отчета &quot;Просмотр резюме&quot;</value>
+  </synonym>
+</mdclass:Role>

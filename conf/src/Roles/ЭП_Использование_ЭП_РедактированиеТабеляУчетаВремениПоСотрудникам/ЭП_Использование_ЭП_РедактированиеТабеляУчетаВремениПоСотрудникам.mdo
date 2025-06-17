@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7728dc9-ba04-4d69-af8d-d23cd92e8ed8">
+  <name>ЭП_Использование_ЭП_РедактированиеТабеляУчетаВремениПоСотрудникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование обработки &quot;Редактирование табеля учета времени по сотрудникам&quot;</value>
+  </synonym>
+</mdclass:Role>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2a202a98-2d27-48c4-b8cb-0875435286f8">
+  <name>ЭП_УведомлениеОтветственномуПроставитьОценки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уведомление ответственному проставить оценки</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

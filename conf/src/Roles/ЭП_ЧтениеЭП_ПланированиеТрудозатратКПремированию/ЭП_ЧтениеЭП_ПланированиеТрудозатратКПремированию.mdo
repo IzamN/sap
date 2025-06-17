@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6898d514-4869-4e00-896f-ec16c4979ff7">
+  <name>ЭП_ЧтениеЭП_ПланированиеТрудозатратКПремированию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение документа &quot;Планирование трудозатрат к премированию&quot;</value>
+  </synonym>
+</mdclass:Role>

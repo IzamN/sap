@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0463244-0ac1-4c9e-9cdc-fc054a4d2248">
+  <producedTypes>
+    <selectionType typeId="4100e36d-a26e-4ed3-8e60-1025101b0401" valueTypeId="77c02c6e-cf24-4e64-87b5-47d74c950092"/>
+    <listType typeId="4792c5d3-2f11-4808-8433-c26e21c1c480" valueTypeId="c6f7f045-2300-45ff-a63a-9e1422f8d670"/>
+    <managerType typeId="eef7be80-021e-4eaf-947f-c0f150cfc423" valueTypeId="960c819f-7284-418e-8a94-7fb0330adb0f"/>
+    <recordSetType typeId="c59b391f-1b5f-4fea-9c92-e9089a6d21e7" valueTypeId="939f8406-c6d4-455c-9ccc-82fa638b149a"/>
+    <recordKeyType typeId="424d66a2-0e40-4c97-bcdc-277e7c50995d" valueTypeId="00d8c42b-f538-46f6-8168-62bb309e381f"/>
+    <recordType typeId="f2ce20c9-23bb-4b9d-a340-04f054ab913b" valueTypeId="e267814b-4805-426a-b645-d6db31daf645"/>
+    <recordManagerType typeId="2080f7b4-3ef8-43d3-a9e2-e643603a15ff" valueTypeId="150604ff-fab9-4f76-ac20-81dcf68b62be"/>
+  </producedTypes>
+  <name>ЭП_ДатыЗакрытияРедактированияПоказателей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты закрытия редактирования показателей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="93280d1c-2cd6-461c-a218-e1be59736a53">
+    <name>РасчетныйПрофиль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчетный профиль</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_ПрофилиРасчетаРезультативности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

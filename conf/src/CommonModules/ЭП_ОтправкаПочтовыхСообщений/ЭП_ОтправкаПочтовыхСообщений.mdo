@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0fb56ae-79ae-4a84-8242-4ad0d1b2156a">
+  <name>ЭП_ОтправкаПочтовыхСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка почтовых сообщений</value>
+  </synonym>
+  <comment>Спиридонов А.И. 09.12.2024</comment>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0edce5f5-40e8-4b46-9f66-3f6ee4c6b45c">
+  <producedTypes>
+    <refType typeId="166e822c-4f8b-4f7b-a4db-5a655b34e6ca" valueTypeId="f5134d64-92c7-4dcb-8096-6db7b04e4e70"/>
+    <listType typeId="c3bfa176-faa6-43a0-baa0-b40e537983f6" valueTypeId="3830cb35-13db-4e03-8a42-129cc6892e95"/>
+    <managerType typeId="2af2e0c5-574e-4cf0-925c-5bc2440e61ef" valueTypeId="cea234e3-09c5-47b0-8a8c-935dc53ff51d"/>
+  </producedTypes>
+  <name>ЭП_ТипЗаявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тип заявки</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="3b29d192-8cac-4515-a0ae-a2f7db65ba8a">
+    <name>ОрганизацияРабочегоМеста</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация рабочего места</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="49a5356b-d6e3-4821-9608-aa43e21f92c5">
+    <name>ПредоставлениеДоступаККонтуру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предоставление доступа к контуру</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="eceba23c-8a26-457c-bb93-94f00839636f">
+    <name>ЗапросНаОбслуживание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на обслуживание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d8178e50-9b36-4b23-ada9-bbb16351cab7">
+    <name>НеработоспособностьСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Неработоспособность сервиса</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ccfce6a2-a15e-416e-90a2-81b11cf700f2">
+    <name>УвольнениеСотрудника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Увольнение сотрудника</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

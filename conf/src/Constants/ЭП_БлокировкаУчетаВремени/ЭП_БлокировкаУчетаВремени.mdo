@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff420731-0544-42b0-86d0-2def761ebabc">
+  <producedTypes>
+    <managerType typeId="698ce763-fd7a-4d7a-90e8-14c14f652c66" valueTypeId="2ce058d0-5b0f-4e9f-adac-fee7cb2bda38"/>
+    <valueManagerType typeId="44218ebf-40de-4350-b39e-79cc4f56bdc3" valueTypeId="66324123-71ef-46fb-869f-226bb74ad570"/>
+    <valueKeyType typeId="5663c612-054a-481a-afb6-22682e902752" valueTypeId="c0752571-eb9c-49c5-be23-f2e6cada9cb8"/>
+  </producedTypes>
+  <name>ЭП_БлокировкаУчетаВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Блокировка учета времени</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

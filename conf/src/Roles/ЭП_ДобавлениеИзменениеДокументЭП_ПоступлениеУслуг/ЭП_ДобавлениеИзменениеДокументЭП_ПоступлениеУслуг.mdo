@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c93f81b8-0c93-47f9-9f47-1a3f2382bf65">
+  <name>ЭП_ДобавлениеИзменениеДокументЭП_ПоступлениеУслуг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление изменение документ &quot;Поступление (акты)&quot;</value>
+  </synonym>
+</mdclass:Role>

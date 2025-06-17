@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b07170f-16f9-4114-8257-302af0ea17ec">
+  <producedTypes>
+    <objectType typeId="e38f1800-6cfa-49c4-8235-8b416224e972" valueTypeId="920397b8-e0f8-4a6d-a5eb-18e0256354d1"/>
+    <managerType typeId="9da83cec-c144-4b6e-a0ab-3a483a8c7177" valueTypeId="e39f355d-266f-49cc-b469-020ca4b81f2f"/>
+  </producedTypes>
+  <name>ЭП_ВыгрузкаТрудозатратВExcel</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка трудозатрат в excel</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЭП_ВыгрузкаТрудозатратВExcel.Form.Форма</defaultForm>
+  <forms uuid="9dc5d789-da51-4a7b-9a04-297ce50dcff2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="debef1bb-7c5d-47e9-80f1-8a12e2a592c8">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+  </templates>
+</mdclass:DataProcessor>

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e018af6a-6936-410f-b36a-69c24e610f59">
+  <producedTypes>
+    <objectType typeId="c1fd2273-fb69-467f-acd0-25387ad084b9" valueTypeId="c2131757-9654-46dc-b457-a250c5547eb1"/>
+    <refType typeId="3f93697a-7426-4e28-8425-485ef3bbe483" valueTypeId="646f7d7c-a6b9-4c4b-8d3e-7bca18b22689"/>
+    <selectionType typeId="431f16d3-a9f7-419d-9a4a-0175e56146ff" valueTypeId="92fb7e58-cc27-4688-a40d-60947ed374e5"/>
+    <listType typeId="9191c92b-9dfd-41d9-a4c8-8a6ae2b1deeb" valueTypeId="d9cde130-2dfa-4234-8e55-6d8e353f250c"/>
+    <managerType typeId="8e2861b5-bdaf-4985-906f-dabca238475c" valueTypeId="192450a0-9e2f-45ce-88b3-694d2000ff5a"/>
+    <containerType typeId="c6bdd4b1-d3e7-4b9c-9543-31dc71bd4b0a" valueTypeId="af733e19-79b0-419f-972d-58c1bea37f5d"/>
+  </producedTypes>
+  <name>ЭП_ПоказателиЭффективностиСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели эффективности сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCharacteristicTypes.ЭП_ПоказателиЭффективностиСотрудников.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCharacteristicTypes.ЭП_ПоказателиЭффективностиСотрудников.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>12</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="da7dc9fb-f9c8-40bf-a6df-a663ee82cd09">
+      <name>ФактическаяВыработкаЧасов</name>
+      <description>Фактическая выработка часов</description>
+      <code>0000000001</code>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>12</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCharacteristicTypes.ЭП_ПоказателиЭффективностиСотрудников.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>ChartOfCharacteristicTypes.ЭП_ПоказателиЭффективностиСотрудников.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="ae1848f6-1dfd-474e-b348-6766c6971d5d">
+    <name>НаименованиеПолное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование полное</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9a44cedf-0a2d-423e-935e-d720aa0802f9">
+    <name>МинЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мин. значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ЭП_ПоказателиЭффективностиСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>ChartOfCharacteristicTypes.ЭП_ПоказателиЭффективностиСотрудников.StandardAttribute.ValueType</field>
+    </linkByType>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="80e7d57a-003b-4536-97a5-c6d785a602a5">
+    <name>МаксЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макс. значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ЭП_ПоказателиЭффективностиСотрудников</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>0 - не ограничено</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>ChartOfCharacteristicTypes.ЭП_ПоказателиЭффективностиСотрудников.StandardAttribute.ValueType</field>
+    </linkByType>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="408ed870-980a-40ec-8b85-2d7b06199616">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="db47331c-63dc-4640-9555-993a24952441">
+    <name>Аббревиатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аббревиатура</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>5</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8a2b10de-c39d-4b48-9f06-171f6b15d34f">
+    <name>ПоПроекту</name>
+    <synonym>
+      <key>ru</key>
+      <value>По проекту</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4bbababe-354c-4a50-908f-26c0bc624322">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="69032cab-30e8-4ffb-8012-b9d6e96aa0b8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

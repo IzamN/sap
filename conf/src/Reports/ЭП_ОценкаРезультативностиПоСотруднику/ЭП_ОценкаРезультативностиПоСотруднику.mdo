@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb1a3c86-dab4-4fd1-8e1f-f3483e7d8cc9">
+  <producedTypes>
+    <objectType typeId="7738385b-f641-4973-9b08-13f48c69f0c7" valueTypeId="f2c04725-fa2f-402c-b125-897ca2c0c431"/>
+    <managerType typeId="ac7564f6-6575-4065-9f6c-b26da4465838" valueTypeId="12d27df8-aab7-4db1-a520-b4e9585ea02a"/>
+  </producedTypes>
+  <name>ЭП_ОценкаРезультативностиПоСотруднику</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка результативности по сотруднику</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЭП_ОценкаРезультативностиПоСотруднику.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ЭП_ОценкаРезультативностиПоСотруднику.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="795677b9-3c6e-4ef1-95a5-aab53b66e14a">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="ff0fc81c-71dd-417d-b359-87a9887bf9a8">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <templates uuid="2b4acf05-b7b9-465b-b37e-3a49dc5b0079">
+    <name>СхемаРасшифровка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема расшифровка</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

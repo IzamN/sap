@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b43aadcf-93f9-4a3d-aa2c-5d510aed62ab">
+  <producedTypes>
+    <selectionType typeId="2c566ca0-c8d7-4384-b3d0-8f6759b71303" valueTypeId="fe3d9c5b-5ec1-4ba8-b6e8-f27d28820214"/>
+    <listType typeId="27e59308-5a5f-4a28-9626-c68adcc24929" valueTypeId="9c9a678a-638c-4c01-aca9-f754946d3449"/>
+    <managerType typeId="dc72da78-a289-46d8-9565-75cace7fd65d" valueTypeId="bc78955f-485b-42a1-af9f-6b3682086593"/>
+    <recordSetType typeId="1203d119-f820-4514-b33d-13737aa47890" valueTypeId="eca94cf5-aea0-47ae-9532-758cb0fa4062"/>
+    <recordKeyType typeId="7571213c-bd01-4bf9-86d2-fdcd16580e9f" valueTypeId="3dfd7fbd-9079-42d9-985b-3a09557f9551"/>
+    <recordType typeId="f22d1ce3-09f5-41b5-939b-e637bb883aa1" valueTypeId="8b3b22af-d128-4311-9511-d84c41626d64"/>
+    <recordManagerType typeId="c126320c-9810-4137-bdca-3b6343774f09" valueTypeId="56f8fb4e-ebf7-4c02-93db-98e904ea44ea"/>
+  </producedTypes>
+  <name>ЭП_РассчитанныеКоэффициентыПоПроектам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассчитанные коэффициенты по проектам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="750c8fea-5c59-4f48-9575-a5400e8afeaa">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.ЭП_ПоказателиЭффективностиСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="35658f9f-1784-4202-bb73-6671f904f9f8">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.ЭП_ПоказателиЭффективностиСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ae7a8989-773e-4f73-8149-697691ee12f9">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

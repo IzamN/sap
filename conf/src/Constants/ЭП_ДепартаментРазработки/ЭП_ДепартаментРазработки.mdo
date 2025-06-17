@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="86d6caa8-723a-45e2-b826-9abe05be6385">
+  <producedTypes>
+    <managerType typeId="100f38b3-087b-433f-afa3-227e4a48710d" valueTypeId="d73bb57c-b709-45a7-9bd0-707b9f8427b3"/>
+    <valueManagerType typeId="b6fc681c-bf86-4e43-9bb8-8819008261cc" valueTypeId="45e8603f-51fb-4c1a-85c0-8e2e1bc8789e"/>
+    <valueKeyType typeId="0b1fa8fc-e80f-44bf-b124-94250bc7a415" valueTypeId="61271628-2abb-44d5-b1a8-f529fc56c581"/>
+  </producedTypes>
+  <name>ЭП_ДепартаментРазработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Департамент разработки</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Подразделения</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

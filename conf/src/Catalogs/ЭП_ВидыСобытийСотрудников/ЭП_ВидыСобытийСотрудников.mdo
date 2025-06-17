@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24e5fdc5-e2be-45b5-9113-4011cc05817f">
+  <producedTypes>
+    <objectType typeId="637087bb-0dea-48e2-af11-932724d27a82" valueTypeId="2ec56843-2731-4f46-9840-d4e04aafca7f"/>
+    <refType typeId="68ea499d-739c-4006-a3de-3974f0dabcaa" valueTypeId="78457692-799b-42b1-8390-c0d0cb5d1426"/>
+    <selectionType typeId="39e8764f-a4b6-4905-9cb1-39777ac59e6b" valueTypeId="b6acfcbf-7209-485b-b96f-6adcf85bc299"/>
+    <listType typeId="1549ba21-33a7-4c62-aad3-f5432581e470" valueTypeId="de00af4f-1e49-4bc2-b058-8dbb8233aec2"/>
+    <managerType typeId="40df1aaa-3229-4616-b50e-57c3e7c8c775" valueTypeId="227f464d-363a-43ba-80c3-5c81c24d8c6f"/>
+  </producedTypes>
+  <name>ЭП_ВидыСобытийСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды событий сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭП_ВидыСобытийСотрудников.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭП_ВидыСобытийСотрудников.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="8c7fec0f-6fc4-4c94-ae26-4810b8b5d325">
+      <name>ОбновитьКомпетенцииСотрудника</name>
+      <description>Обновить компетенции сотрудника</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000002</value>
+      </code>
+    </items>
+    <items id="f61c6a02-57be-43d4-ac65-30edb2fc16ab">
+      <name>ПроектноеРезюме</name>
+      <description>Проектное резюме</description>
+      <code xsi:type="core:StringValue">
+        <value>0000000003</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

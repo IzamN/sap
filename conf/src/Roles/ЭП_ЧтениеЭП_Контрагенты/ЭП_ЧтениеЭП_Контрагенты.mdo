@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d08ff692-afbc-4c92-a554-5921177c0f89">
+  <name>ЭП_ЧтениеЭП_Контрагенты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение Контрагенты</value>
+  </synonym>
+</mdclass:Role>

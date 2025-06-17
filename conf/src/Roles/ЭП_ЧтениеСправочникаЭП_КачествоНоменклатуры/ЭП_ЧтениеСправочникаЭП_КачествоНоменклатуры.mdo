@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e685d9a-2535-4ef8-a2be-9c03d30700f3">
+  <name>ЭП_ЧтениеСправочникаЭП_КачествоНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение справочника &quot;Качество номенклатуры&quot;</value>
+  </synonym>
+</mdclass:Role>

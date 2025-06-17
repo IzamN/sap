@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9644f2b-bc41-4a7f-81b4-6eb9c42761a3">
+  <producedTypes>
+    <objectType typeId="d02c717e-4ba7-41f2-8a2a-e2cd067688cb" valueTypeId="460d98ef-7a24-4a52-bc95-c6a8decf2177"/>
+    <managerType typeId="d7c43aec-8bcf-48a2-a7d6-d96c716d8c20" valueTypeId="4cd69373-faeb-4ff2-ad12-4818b9efc8bd"/>
+  </producedTypes>
+  <name>ЭП_ОбновлениеГрафиковЗУПУдалитьЗаписи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление графиков ЗУП Удалить записи</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЭП_ОбновлениеГрафиковЗУПУдалитьЗаписи.Form.Форма</defaultForm>
+  <forms uuid="95a8fe79-f749-4111-adda-bb78c48d6616">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

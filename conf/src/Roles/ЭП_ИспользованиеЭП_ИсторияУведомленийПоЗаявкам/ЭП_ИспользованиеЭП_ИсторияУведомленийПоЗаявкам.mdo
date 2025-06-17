@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="abd9dfe3-a117-4090-a6a6-f7cb7f44293e">
+  <name>ЭП_ИспользованиеЭП_ИсторияУведомленийПоЗаявкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование регистра &quot;История уведомлений по заявкам&quot;</value>
+  </synonym>
+</mdclass:Role>

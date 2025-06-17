@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0375b245-860c-4c98-bddd-fef9d66766cf">
+  <name>ЭП_ИспользованиеВиджетаТрудозатратПопроектам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование &quot;Виджета трудозатраты по проектам проведения документов трудозатрат по проектам&quot;</value>
+  </synonym>
+</mdclass:Role>

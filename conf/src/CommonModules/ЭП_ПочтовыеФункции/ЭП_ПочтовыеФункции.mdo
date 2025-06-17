@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a10707b7-2387-468e-9224-002ff764caf8">
+  <name>ЭП_ПочтовыеФункции</name>
+  <synonym>
+    <key>ru</key>
+    <value>Почтовые функции</value>
+  </synonym>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

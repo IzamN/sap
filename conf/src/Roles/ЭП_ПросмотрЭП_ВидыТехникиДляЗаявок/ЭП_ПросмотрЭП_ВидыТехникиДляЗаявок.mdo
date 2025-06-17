@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a0d2ad8-b64e-4bba-9e51-d1b0d200cbaf">
+  <name>ЭП_ПросмотрЭП_ВидыТехникиДляЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр ПВХ &quot;Виды техники для заявок&quot;</value>
+  </synonym>
+</mdclass:Role>

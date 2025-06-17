@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a90d3e0-ce20-4dc8-b4fd-03049a3c1894">
+  <name>ЭП_УчетKPI</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учет KPI</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>ChartOfCharacteristicTypes.ЭП_ПоказателиЭффективностиСотрудников</content>
+  <content>Catalog.ЭП_ПрофилиОценивания</content>
+  <content>InformationRegister.ЭП_ОтветственныеЗаОценкуЭффективности</content>
+  <content>InformationRegister.ЭП_ЭффективностьСотрудников</content>
+  <content>Catalog.ЭП_ПрофилиРасчетаРезультативности</content>
+  <content>Report.ЭП_РасчетРезультативности</content>
+  <content>InformationRegister.ЭП_ОтветственныеЗаЭффективностьПроекта</content>
+  <content>Report.ЭП_РезультативностьСотрудника</content>
+  <content>DataProcessor.ЭП_ВводПоказателейЭффективностиАУП</content>
+  <content>InformationRegister.ЭП_РассчитанныеКоэффициентыПоСотрудникам</content>
+  <content>InformationRegister.ЭП_ДатыЗакрытияРедактированияПоказателей</content>
+  <content>InformationRegister.ЭП_ОтветственныеЗаОценкуЭффективностиАУП</content>
+  <content>Report.ЭП_ОценкаРезультативности</content>
+  <content>Document.ЭП_РасчетПоказателей</content>
+  <content>Catalog.ЭП_ГруппыРасчетныхПрофилей</content>
+  <content>DataProcessor.ЭП_ВводПоказателейКоманднойРаботыПоПроекту</content>
+  <content>Report.ЭП_ТабельУчетаРабочегоВремени</content>
+  <content>DataProcessor.ЭП_ВводПоказателейЭффективностиПоПроектнымСпискам</content>
+  <content>Document.ЭП_УтверждениеФактическихТрудозатрат</content>
+  <content>Report.ЭП_ОценкаРезультативностиПоСотруднику</content>
+  <content>Report.ЭП_ДетализацияПоСотрудникамВРазрезеПроектов</content>
+  <content>Document.ЭП_ВыплатыПремий</content>
+  <content>Document.ЭП_КорректировкаВыплатПремий</content>
+  <content>Report.ЭП_РассчитаннаяПремия</content>
+  <content>AccumulationRegister.ЭП_УчетПремий</content>
+  <content>Report.ЭП_ВыплатыПремий</content>
+  <content>Report.ЭП_ПланФактЗагрузкиНаПроектах</content>
+  <content>Report.ЭП_СписокОбъектовМетаданныхПоПроектам</content>
+  <content>Catalog.ЭП_ТипРесурса</content>
+  <content>InformationRegister.ЭП_ПлановаяЗагруженностьСотрудников</content>
+  <content>InformationRegister.ЭП_ИтогиСогласованияПереработок</content>
+  <content>AccumulationRegister.ЭП_УчетПереработок</content>
+  <content>Role.ЭП_ДобавлениеИзменение_ТрудозатратыКПремированию</content>
+  <content>Role.ЭП_ИспользованиеОтчетаЭП_Акт</content>
+  <content>Role.ЭП_ПросмотрДокументаЭП_Акта</content>
+  <content>Role.ЭП_ДобавлениеИзменениеДокументЭП_Акт</content>
+  <content>Report.ЭП_ПланируемыйФОТ</content>
+  <parentSubsystem>Subsystem.ЭП_Сотрудники</parentSubsystem>
+</mdclass:Subsystem>

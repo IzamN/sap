@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06997f0a-d11b-47b6-b037-7c5919597047">
+  <producedTypes>
+    <managerType typeId="4df1da6d-560b-4a8c-8e5f-bfe024a31bde" valueTypeId="2fd01f90-3555-4cde-964b-98b64439777c"/>
+    <valueManagerType typeId="288698f4-57a1-468f-bbc1-16993b785776" valueTypeId="66c8bf42-df94-4a6f-a73d-e2db84db3d3e"/>
+    <valueKeyType typeId="0868dbeb-468f-451a-9b17-950f7c864c7a" valueTypeId="197f5727-ad7e-4870-a335-5d769bad0757"/>
+  </producedTypes>
+  <name>ЭП_ЗадержкаПередОтправкойПисем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задержка передотправкой писем для документов планирование переработок</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

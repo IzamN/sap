@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a4c7e21-12e8-4422-94d1-7e489ce7fc6c">
+  <producedTypes>
+    <selectionType typeId="c1393e29-d292-4c4d-815b-1c5dcb1082cc" valueTypeId="ca021d07-9c61-4a8f-b20c-2b4b0803df5b"/>
+    <listType typeId="fa883f93-450b-4978-81c4-0fd0a4261b00" valueTypeId="3815c192-2632-4663-80ca-5af18a30c80c"/>
+    <managerType typeId="9aafe47c-9bc9-4995-83d4-04fa7118b828" valueTypeId="df45c003-42e2-47d8-aac3-7cf13faf47ff"/>
+    <recordSetType typeId="bdb038cd-f3c6-4aa5-af73-1a3e46d5afa8" valueTypeId="ac7ab6d2-2e57-451d-96d4-b85f7ce78552"/>
+    <recordKeyType typeId="4d7e2ee9-2667-477d-b839-6529d6fec00b" valueTypeId="58c3ecd5-74b7-4598-826d-aa38da2d33c9"/>
+    <recordType typeId="e7bd919a-192a-4310-9204-c3deb4f965ac" valueTypeId="ddd0d908-88b5-4de0-8998-f6c452ca9d8f"/>
+    <recordManagerType typeId="6e4ebc10-431c-45bc-afad-ba78a68201cf" valueTypeId="0caab6f5-0f8e-453f-9f87-65250320e61c"/>
+  </producedTypes>
+  <name>ЭП_КачествоНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Качество номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ЭП_КачествоНоменклатуры.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4006437f-98ce-415b-9c5b-5c5007a5b28a">
+    <name>КачествоНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Качество номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_КачествоНоменклатуры</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3549c16b-8529-4332-88e7-84e392721c41">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a256f4e8-f70a-4c98-b385-8f418c2bd173">
+    <name>ИнвентарныйНомер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инвентарный номер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="bab4430b-9e81-4541-a541-16976b7b7940">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

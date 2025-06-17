@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9c42e8cf-7cfe-4a56-a35a-c50ccab230ab">
+  <name>ЭП_Заявки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заявки</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ЭП_Заявка</picture>
+  </picture>
+  <content>BusinessProcess.ЭП_Заявки</content>
+  <content>Task.ЭП_ЗадачиЗаявок</content>
+  <content>Enum.ЭП_ТипЗаявки</content>
+  <content>Catalog.ЭП_Сервисы</content>
+  <content>Enum.ЭП_СтатусыЗаявок</content>
+  <content>InformationRegister.ЭП_НастройкиАдресацииДляВыполненияЗаявок</content>
+  <content>Enum.ЭП_ИсполнителиЗаявок</content>
+  <content>ChartOfCharacteristicTypes.ЭП_ВидыТехникиДляЗаявок</content>
+  <content>InformationRegister.ЭП_ИсторияУведомленийПоЗаявкам</content>
+  <content>InformationRegister.ЭП_НастройкаУведомленийПоЗаявкам</content>
+</mdclass:Subsystem>

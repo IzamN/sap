@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FunctionalOptionsParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a7be7580-b05d-4411-bcc3-b0fb60a5d399">
+  <name>ПараметрУведомленияПоЗаявкам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметр уведомления по заявкам</value>
+  </synonym>
+  <use>InformationRegister.ЭП_НастройкаУведомленийПоЗаявкам.Dimension.Пользователь</use>
+</mdclass:FunctionalOptionsParameter>

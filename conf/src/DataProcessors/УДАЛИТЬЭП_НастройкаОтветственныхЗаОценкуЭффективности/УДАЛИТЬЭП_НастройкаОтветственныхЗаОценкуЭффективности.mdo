@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac589336-4e16-4386-b247-319b4af68c80">
+  <producedTypes>
+    <objectType typeId="a1471f7d-0e37-435b-ac36-e41c4b4ca7e5" valueTypeId="0e998e81-0c0c-4101-bc93-c63ed5facf29"/>
+    <managerType typeId="f6cb53dc-b225-4766-935e-b3fa5898aa6d" valueTypeId="44b3665c-2e3d-497d-8224-c05466f3f6b0"/>
+  </producedTypes>
+  <name>УДАЛИТЬЭП_НастройкаОтветственныхЗаОценкуЭффективности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка ответственных за оценку эффективности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.УДАЛИТЬЭП_НастройкаОтветственныхЗаОценкуЭффективности.Form.Форма</defaultForm>
+  <forms uuid="3a4eff76-6eaa-401a-bfde-ec7dee558780">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

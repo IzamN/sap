@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="beefee61-142d-4e14-a597-81f00b57277b">
+  <producedTypes>
+    <objectType typeId="262457e7-e692-4649-92a1-6587a786e697" valueTypeId="751c9621-54af-42cc-8bc2-df7c4a84b77c"/>
+    <managerType typeId="5aa041b6-9a52-4a0f-a683-b875169d2a4a" valueTypeId="53aa5534-a0ff-458b-a391-0bfd4e441eeb"/>
+  </producedTypes>
+  <name>ЭП_РедактированиеТабеляУчетаВремениПоСотрудникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Редактирование табеля по сотрудникам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЭП_РедактированиеТабеляУчетаВремениПоСотрудникам.Form.Форма</defaultForm>
+  <attributes uuid="588051a9-e0ee-4c9d-9696-5a02a169e834">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период регистрации</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b88c1f4c-871b-48e6-a634-801bd6f7302d">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="2e4cd2c5-7bdc-470d-9e4f-0943f76c209d">
+    <name>ДатаНачалаПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9651fb89-12eb-42e8-9a21-c0137c5ea7c6">
+    <name>ДатаОкончанияПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ed023dbc-25bc-421d-b42b-42188cee2b8d">
+    <name>ПериодВводаДанныхОВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные за</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="4868740f-cdee-4e3d-98a9-5e71e68ef7dd">
+    <producedTypes>
+      <objectType typeId="30665633-f0fc-4b01-9930-b246f4ad58f2" valueTypeId="de7f4a8a-d864-4060-b4fa-c7b08ec6408a"/>
+      <rowType typeId="cc6992e0-761d-4364-bc0d-3a9ee48f8e06" valueTypeId="fd0a48e6-eab9-4a24-bdde-19c0aac35c4d"/>
+    </producedTypes>
+    <name>ДанныеОВремени</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные о времени</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <synonym>
+        <key>ru</key>
+        <value>НомерСтрокиСотрудник</value>
+      </synonym>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="cbc534c7-2775-440c-8a75-5dbe6a77eca9">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="aa1ea104-37db-4377-85ad-448dffcef1fa">
+      <name>Организация</name>
+      <synonym>
+        <key>ru</key>
+        <value>Организация</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_Организации</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="531c54f6-8020-4a0b-acb8-741e076171f0">
+      <name>Часов1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов1</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1070ee9f-4823-448d-8407-ff35e545294b">
+      <name>Часов2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов2</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4c394c59-dde1-4cc7-b019-409b469c24e2">
+      <name>Часов3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов3</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="89541cf0-3390-434c-967e-284f6260e83a">
+      <name>Часов4</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов4</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f61adec2-9764-461f-b467-bea722e0a527">
+      <name>Часов5</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов5</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a57dbdd2-bc7e-4c89-8d5e-cd674aebcdd1">
+      <name>Часов6</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов6</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="3a28cad8-1746-4a40-ba22-af3b15dfa466">
+      <name>Часов7</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов7</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8e23f15b-fcb7-4954-a5f3-457e03818732">
+      <name>Часов8</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов8</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4b71e1f9-f91f-4a99-9bfd-e1f9b43456d7">
+      <name>Часов9</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов9</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e85bcf85-145b-420d-99ac-0945c24e8e98">
+      <name>Часов10</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов10</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="019e6eef-717d-4a7e-a871-20a933c2c477">
+      <name>Часов11</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов11</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9c9fc00c-e6b5-41b7-b4d0-e3293f11a9bf">
+      <name>Часов12</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов12</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="634a438a-3a96-4fd1-bcd3-3e71da643904">
+      <name>Часов13</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов13</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1c9bb1e8-3a1d-48b2-9044-66a0a388680a">
+      <name>Часов14</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов14</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="de4e9c2e-4237-4c57-b982-bf160e7676b6">
+      <name>Часов15</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов15</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="771c7311-55a3-4a66-9f69-39f9f613477c">
+      <name>Часов16</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов16</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="36ec871c-e5f7-46ef-9950-e0339890cf86">
+      <name>Часов17</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов17</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="39cd0386-bf2d-4e10-a1f7-140f2b0beac7">
+      <name>Часов18</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов18</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="612b4c47-d8ad-439b-b05b-02fbeb4a3913">
+      <name>Часов19</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов19</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="4db4351f-c765-4540-acde-9fd234c4058f">
+      <name>Часов20</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов20</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="420ec9e3-fba6-456d-aabf-141909d6dc52">
+      <name>Часов21</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов21</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d2a429d8-3c43-498a-ba95-456d6bccd813">
+      <name>Часов22</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов22</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d814bc8b-ac47-4859-bcbe-6c08df56f334">
+      <name>Часов23</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов23</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="873f29bd-6343-4bfe-b864-22827d5f925d">
+      <name>Часов24</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов24</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="de5eccd4-7ded-4637-9162-eaecea8e22c6">
+      <name>Часов25</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов25</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2382eea3-f104-4a17-864e-c92230f7955d">
+      <name>Часов26</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов26</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7492722d-7f81-49b9-8c60-67c4ca3b03ae">
+      <name>Часов27</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов27</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="94e4634e-3cc8-441a-b68c-23d9cc828e9d">
+      <name>Часов28</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов28</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="65f1ad51-ac6b-4fa7-88a4-ec5e4dc43a46">
+      <name>Часов29</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов29</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="781646e4-d353-4f26-88b8-5e97c9b507da">
+      <name>Часов30</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов30</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f6487665-2af8-4281-81db-86a9ce0a1ea6">
+      <name>Часов31</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часов31</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fa4fb739-deb7-4cbb-a378-df6a1eecac34">
+      <name>ВидВремени1</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени1</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="fcae2b08-34ac-4f54-92da-1c4efe04daf1">
+      <name>ВидВремени2</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени2</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7b23899c-aaef-42d1-a2a2-abbc03036788">
+      <name>ВидВремени3</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени3</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e82c922e-5a21-453c-99d9-3d25787ecfd2">
+      <name>ВидВремени4</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени4</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2f5955f4-372c-4eee-b6d6-1dbe9d6abbad">
+      <name>ВидВремени5</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени5</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8809402e-9f51-4518-a38a-7224767a4fc9">
+      <name>ВидВремени6</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени6</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="881dc0d9-8b17-48d6-8451-6e60e55916ed">
+      <name>ВидВремени7</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени7</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="15092937-474b-4ba7-808b-b245724b16eb">
+      <name>ВидВремени8</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени8</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ee4f5dd9-7e36-42ab-a97f-9702b8dc85d8">
+      <name>ВидВремени9</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени9</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="9153d863-915f-4563-b086-c84047c1b11e">
+      <name>ВидВремени10</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени10</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="870d6ecf-212c-418a-a029-2014e9ba1888">
+      <name>ВидВремени11</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени11</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d3eaebc7-9980-4295-8f34-4c70323ffc23">
+      <name>ВидВремени12</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени12</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="10478b52-d691-4e97-a534-99c3b0ad90d4">
+      <name>ВидВремени13</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени13</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="891c9068-07fa-4562-95c6-90fb8064f2f4">
+      <name>ВидВремени14</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени14</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="855de81a-a825-49a9-8867-65974f547f6c">
+      <name>ВидВремени15</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени15</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="44f613ba-ceb9-40d8-ae38-8f64cabb7ccc">
+      <name>ВидВремени16</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени16</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="233eba92-648e-4a7e-b9f1-22142e428120">
+      <name>ВидВремени17</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени17</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="0bdfd64c-cd19-4cf7-ba2b-8c38456c7348">
+      <name>ВидВремени18</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени18</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="61d558c3-40af-4003-8ef7-b48dd1d30256">
+      <name>ВидВремени19</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени19</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d607ca6f-1d84-4bb9-abe7-710fa701d156">
+      <name>ВидВремени20</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени20</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="65f61ef2-9231-44f8-9690-6e462e1041ee">
+      <name>ВидВремени21</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени21</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="450562f6-329d-4a4b-bdfc-12c13ad2720c">
+      <name>ВидВремени22</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени22</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="d416d5de-d612-42ae-8401-e43d1a76fcc5">
+      <name>ВидВремени23</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени23</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="1c23d8fa-16b3-4920-9c5d-fc3102ca444b">
+      <name>ВидВремени24</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени24</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="06550b43-b43f-4928-9a1e-040626e9d78d">
+      <name>ВидВремени25</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени25</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="a82464ea-3f07-43bb-a335-676968a18cc4">
+      <name>ВидВремени26</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени26</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="36e4eb50-7279-4061-8df5-0eaed138b5df">
+      <name>ВидВремени27</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени27</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2533c648-99d7-4d34-b0b9-15d18fa75fe6">
+      <name>ВидВремени28</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени28</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c7d659a4-b32b-4f74-ba33-db53e220668c">
+      <name>ВидВремени29</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени29</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="55405f11-6a21-4956-a3a0-4124e36ac15b">
+      <name>ВидВремени30</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени30</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="16e3fa39-6acd-4eff-b437-d6ab42e36eb9">
+      <name>ВидВремени31</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид времени31</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="281a7abb-1259-4dec-9332-e5330a397d46">
+    <producedTypes>
+      <objectType typeId="495823d5-6279-477f-96e1-a0e1090798a7" valueTypeId="afdbc6d6-2d19-4465-b499-6d5210b4e218"/>
+      <rowType typeId="dfcaaaad-4bf8-4ca8-8c34-00d244c0b27f" valueTypeId="9e9584d2-c551-489e-982d-dd4376c54b00"/>
+    </producedTypes>
+    <name>СотрудникиСИсправлениями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудники с исправлениями</value>
+    </synonym>
+    <attributes uuid="b0e9f574-ee1a-4e78-b8fb-c74ea542269b">
+      <name>ПериодРегистрации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период регистрации</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="46115a49-4891-455b-a7ba-a6b9e82d2686">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="79547bfd-11a5-41a9-8d87-d73494b0227a">
+      <name>ПериодРегистрацииДень</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период регистрации день</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="f32a4ae5-3c0b-432e-9800-d8902f299c5b">
+      <name>ВидУчетаВремени</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид учета времени</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидыУчетаВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5b438165-25de-4df6-aeab-91d30e4a47e2">
+      <name>Часы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Часы</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5906e71d-b811-430a-8a49-43641529583d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

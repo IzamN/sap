@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7e978b14-3283-438b-950d-bd13f8e43419">
+  <producedTypes>
+    <selectionType typeId="6aa075f8-5a3d-4fa8-b821-8d6c31a93c85" valueTypeId="8597bef8-4a07-4cba-b96e-82edea0a2fcd"/>
+    <listType typeId="7c38bb9d-df6c-4e03-8b26-9a4344793f4f" valueTypeId="d69d29e2-d7bc-4325-a695-e4a29cfb932c"/>
+    <managerType typeId="474d0782-8def-46ea-aaf7-1660ce9917f9" valueTypeId="c10b51a2-43e2-4c9b-9213-10602e70f316"/>
+    <recordSetType typeId="fc256545-f1a6-4a25-82ef-4a5f4f7bb191" valueTypeId="25280942-cb48-4fd3-851b-30bc0112a6a7"/>
+    <recordKeyType typeId="3c5d1ddd-b39b-4827-93d9-0a4c0a601d7a" valueTypeId="bb713a88-69e2-48c6-8e9d-637290835492"/>
+    <recordType typeId="4e52b95b-6799-40c7-b0fc-f0791aa8e6a9" valueTypeId="96418ab5-c62b-4493-96bf-d6527449b51d"/>
+    <recordManagerType typeId="099d7cd3-d7e9-44de-b8ba-6e95d89a7a66" valueTypeId="d4072ffd-c150-470f-9661-678f1448e300"/>
+  </producedTypes>
+  <name>ЭП_УтвержденныеПроекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Утвержденные проекты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="71b79866-ded7-4f2a-8d4f-8d6443346183">
+    <name>Утвержден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утвержден</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="2a6da877-5894-4a94-83ea-32b1791b39ab">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="78ed39a8-2452-43d9-874e-cf45ec4ccab3">
+    <name>Месяц</name>
+    <synonym>
+      <key>ru</key>
+      <value>Месяц</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="27057171-5302-4f6d-a68c-6f06463af87f">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

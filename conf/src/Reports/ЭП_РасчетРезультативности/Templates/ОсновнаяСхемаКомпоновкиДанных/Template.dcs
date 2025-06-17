@@ -1,0 +1,1130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Показатель</dataPath>
+			<field>Показатель</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">35</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Комментарий</dataPath>
+			<field>Комментарий</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственный</dataPath>
+			<field>Ответственный</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Значение</dataPath>
+			<field>Значение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Факт</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">35</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЦелевоеЗначение</dataPath>
+			<field>ЦелевоеЗначение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВесовойКоэффициент</dataPath>
+			<field>ВесовойКоэффициент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вес показателя</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СпособАгрегации</dataPath>
+			<field>СпособАгрегации</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МинимальныйПорог</dataPath>
+			<field>МинимальныйПорог</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МаксимальныйПорог</dataPath>
+			<field>МаксимальныйПорог</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Показатель.Порядок</dataPath>
+			<field>ПорядокПоказателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>№ п/п</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПрофильРасчета</dataPath>
+			<field>ПрофильРасчета</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Профиль расчета</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СотрудникиПоПроекту</dataPath>
+			<field>СотрудникиПоПроекту</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудники по проекту</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЭП_ЗагруженностьСотрудниковСрезПоследних.Сотрудник КАК Сотрудник,
+	ЭП_ЗагруженностьСотрудниковСрезПоследних.Проект КАК Проект
+ПОМЕСТИТЬ ЗагруженностьСотрудников
+ИЗ
+	РегистрСведений.ЭП_ЗагруженностьСотрудников.СрезПоследних(&amp;ПериодОценивания, ) КАК ЭП_ЗагруженностьСотрудниковСрезПоследних
+ГДЕ
+	НЕ ЭП_ЗагруженностьСотрудниковСрезПоследних.ПометкаУдаления
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ЭП_ЗагруженностьСотрудников.Сотрудник,
+	ЭП_ЗагруженностьСотрудников.Проект
+ИЗ
+	РегистрСведений.ЭП_ЗагруженностьСотрудников КАК ЭП_ЗагруженностьСотрудников
+ГДЕ
+	ЭП_ЗагруженностьСотрудников.Период &gt;= &amp;ПериодОценивания
+	И НЕ ЭП_ЗагруженностьСотрудников.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЭП_Сотрудники.Ссылка КАК Сотрудник,
+	ЕСТЬNULL(ЗагруженностьСотрудников.Проект, ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)) КАК Проект
+ПОМЕСТИТЬ ПроектыСотрудников
+ИЗ
+	Справочник.ЭП_Сотрудники КАК ЭП_Сотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ ЗагруженностьСотрудников КАК ЗагруженностьСотрудников
+		ПО ЭП_Сотрудники.Ссылка = ЗагруженностьСотрудников.Сотрудник
+ГДЕ
+	НЕ ЭП_Сотрудники.ПометкаУдаления
+	И ЭП_Сотрудники.СтатусСотрудника В(&amp;СтатусыСотрудника)
+	И НЕ ЭП_Сотрудники.НеУчаствуетВИПФ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПроектыЭП_ТаблицаОценивания.Ссылка КАК Проект
+ПОМЕСТИТЬ ДоступныеПроекты
+ИЗ
+	Справочник.Проекты.ЭП_ТаблицаОценивания КАК ПроектыЭП_ТаблицаОценивания
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Пользователи КАК Пользователи
+		ПО ПроектыЭП_ТаблицаОценивания.Оценивает = Пользователи.ЭП_Сотрудник
+ГДЕ
+	Пользователи.Ссылка = &amp;ТекущийПользователь
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ПроектыСотрудников.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ОтборСотрудников
+ИЗ
+	ПроектыСотрудников КАК ПроектыСотрудников
+ГДЕ
+	(ПроектыСотрудников.Проект В
+				(ВЫБРАТЬ
+					ДоступныеПроекты.Проект КАК Проект
+				ИЗ
+					ДоступныеПроекты КАК ДоступныеПроекты)
+			ИЛИ &amp;ПолныеПрава)
+{ГДЕ
+	ПроектыСотрудников.Проект.* КАК СотрудникиПоПроекту}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СУММА(ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.Часы) КАК Часы,
+	ОтборСотрудников.Сотрудник КАК Сотрудник
+ПОМЕСТИТЬ ЧасыПоСотруднику
+ИЗ
+	ОтборСотрудников КАК ОтборСотрудников
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников КАК ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников
+		ПО ОтборСотрудников.Сотрудник = ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.Сотрудник
+ГДЕ
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ВидУчетаВремени = &amp;ВидУчетаВремени
+	И ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ПериодРегистрации = &amp;ПериодОценивания
+
+СГРУППИРОВАТЬ ПО
+	ОтборСотрудников.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СУММА(УчетВремени.Длительность) КАК Длительность,
+	УчетВремени.Проект КАК Проект,
+	ЧасыПоСотруднику.Сотрудник КАК Сотрудник,
+	УчетВремени.ВидДеятельности КАК ВидДеятельности
+ПОМЕСТИТЬ ЧасыПоПроекту
+ИЗ
+	ЧасыПоСотруднику КАК ЧасыПоСотруднику
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.УчетВремени КАК УчетВремени
+		ПО ЧасыПоСотруднику.Сотрудник = УчетВремени.Пользователь.ЭП_Сотрудник
+ГДЕ
+	УчетВремени.Период &gt;= НАЧАЛОПЕРИОДА(&amp;ПериодОценивания, МЕСЯЦ)
+	И УчетВремени.Период &lt;= КОНЕЦПЕРИОДА(&amp;ПериодОценивания, МЕСЯЦ)
+
+СГРУППИРОВАТЬ ПО
+	УчетВремени.Проект,
+	ЧасыПоСотруднику.Сотрудник,
+	УчетВремени.ВидДеятельности
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЭП_СотрудникиРасчетныеПрофили.Ссылка КАК Сотрудник,
+	ЭП_СотрудникиРасчетныеПрофили.Профиль КАК ПрофильРасчета,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.НомерСтроки КАК ПорядокПоказателя,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.Показатель КАК Показатель,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.Ссылка.МинимальныйПорог КАК МинимальныйПорог,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.Ссылка.МаксимальныйПорог КАК МаксимальныйПорог,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.ВесовойКоэффициент КАК ВесовойКоэффициент,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.ЦелевоеЗначение КАК ЦелевоеЗначение,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.СпособАгрегации КАК СпособАгрегации,
+	ЕСТЬNULL(ЭП_ЭффективностьСотрудников.Ответственный, ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)) КАК Ответственный,
+	ЕСТЬNULL(ЭП_ЭффективностьСотрудников.Проект, ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)) КАК Проект,
+	ЕСТЬNULL(ЭП_ЭффективностьСотрудников.Значение, ЭП_ПрофилиРасчетаРезультативностиПоказатели.ЗначениеПоУмолчанию) КАК Значение,
+	ЕСТЬNULL(ЭП_ЭффективностьСотрудников.Комментарий, "") КАК Комментарий
+ИЗ
+	Справочник.ЭП_Сотрудники.РасчетныеПрофили КАК ЭП_СотрудникиРасчетныеПрофили
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ОтборСотрудников КАК ОтборСотрудников
+		ПО ЭП_СотрудникиРасчетныеПрофили.Ссылка = ОтборСотрудников.Сотрудник
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ЭП_ПрофилиРасчетаРезультативности.Показатели КАК ЭП_ПрофилиРасчетаРезультативностиПоказатели
+		ПО ЭП_СотрудникиРасчетныеПрофили.Профиль = ЭП_ПрофилиРасчетаРезультативностиПоказатели.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЭП_ЭффективностьСотрудников КАК ЭП_ЭффективностьСотрудников
+		ПО ЭП_СотрудникиРасчетныеПрофили.Ссылка = ЭП_ЭффективностьСотрудников.Сотрудник
+			И ЭП_СотрудникиРасчетныеПрофили.Профиль = ЭП_ЭффективностьСотрудников.ПрофильРасчета
+			И (ЭП_ПрофилиРасчетаРезультативностиПоказатели.Показатель = ЭП_ЭффективностьСотрудников.Показатель)
+			И (ЭП_ЭффективностьСотрудников.ПериодОценивания = &amp;ПериодОценивания)
+			И (ЭП_ЭффективностьСотрудников.Значение &gt; 0)
+ГДЕ
+	НЕ ЭП_ПрофилиРасчетаРезультативностиПоказатели.Показатель = &amp;ПоказательФактическойВыработки
+{ГДЕ
+	ЭП_СотрудникиРасчетныеПрофили.Профиль.* КАК ПрофильРасчета}
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ЭП_СотрудникиРасчетныеПрофили.Ссылка,
+	ЭП_СотрудникиРасчетныеПрофили.Профиль,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.НомерСтроки,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.Показатель,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.Ссылка.МинимальныйПорог,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.Ссылка.МаксимальныйПорог,
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.ВесовойКоэффициент,
+	ВЫРАЗИТЬ(ЧасыПоСотруднику.Часы * 0.9 КАК ЧИСЛО(15, 2)),
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.СпособАгрегации,
+	ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка),
+	ЧасыПоПроекту.Проект,
+	ЧасыПоПроекту.Длительность / 3600,
+	"АвтоматическийРасчет"
+ИЗ
+	Справочник.ЭП_Сотрудники.РасчетныеПрофили КАК ЭП_СотрудникиРасчетныеПрофили
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ЭП_ПрофилиРасчетаРезультативности.Показатели КАК ЭП_ПрофилиРасчетаРезультативностиПоказатели
+		ПО ЭП_СотрудникиРасчетныеПрофили.Профиль = ЭП_ПрофилиРасчетаРезультативностиПоказатели.Ссылка
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ОтборСотрудников КАК ОтборСотрудников
+		ПО ЭП_СотрудникиРасчетныеПрофили.Ссылка = ОтборСотрудников.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ЧасыПоСотруднику КАК ЧасыПоСотруднику
+		ПО ЭП_СотрудникиРасчетныеПрофили.Ссылка = ЧасыПоСотруднику.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ЧасыПоПроекту КАК ЧасыПоПроекту
+		ПО ЭП_СотрудникиРасчетныеПрофили.Ссылка = ЧасыПоПроекту.Сотрудник
+			И ЭП_СотрудникиРасчетныеПрофили.Профиль.ВидДеятельности = ЧасыПоПроекту.ВидДеятельности
+ГДЕ
+	ЭП_ПрофилиРасчетаРезультативностиПоказатели.Показатель = &amp;ПоказательФактическойВыработки</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ПроцентВыполнения</dataPath>
+		<expression/>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Процент выполнения</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>10</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>КоэффициентВыполнения</dataPath>
+		<expression/>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Коэффициент выполнения</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>10</v8:Digits>
+				<v8:FractionDigits>2</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Индекс</dataPath>
+		<expression/>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Индекс</v8:content>
+			</v8:item>
+		</title>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ЧДЦ=4</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+	</calculatedField>
+	<totalField>
+		<dataPath>Значение</dataPath>
+		<expression>Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец</expression>
+		<group>Показатель</group>
+	</totalField>
+	<totalField>
+		<dataPath>ЦелевоеЗначение</dataPath>
+		<expression>Максимум(ЦелевоеЗначение)</expression>
+		<group>Показатель</group>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентВыполнения</dataPath>
+		<expression>Выразить(Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение)*100, "Число(10,2)")</expression>
+		<group>Показатель</group>
+	</totalField>
+	<totalField>
+		<dataPath>КоэффициентВыполнения</dataPath>
+		<expression>Выразить(Выбор
+Когда Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) &lt; Максимум(МинимальныйПорог) 
+Тогда 0
+Когда Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) &gt; Максимум(МаксимальныйПорог) 
+Тогда Максимум(МаксимальныйПорог)
+Иначе Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) Конец, "Число(10,2)")</expression>
+		<group>Показатель</group>
+	</totalField>
+	<totalField>
+		<dataPath>Индекс</dataPath>
+		<expression>Выразить(Выбор
+Когда Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) &lt; Максимум(МинимальныйПорог) 
+Тогда 0
+Когда Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) &gt; Максимум(МаксимальныйПорог) 
+Тогда Максимум(МаксимальныйПорог)
+Иначе Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) Конец, "Число(10,2)")
+*Максимум(ВесовойКоэффициент)</expression>
+		<group>Показатель</group>
+	</totalField>
+	<totalField>
+		<dataPath>Индекс</dataPath>
+		<expression>Выбор Когда 
+Сумма(ВычислитьВыражениеСГруппировкойМассив("
+Выразить(Выбор
+Когда Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) &lt; Максимум(МинимальныйПорог) 
+Тогда 0
+Когда Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) &gt; Максимум(МаксимальныйПорог) 
+Тогда Максимум(МаксимальныйПорог)
+Иначе Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) Конец, ""Число(10,2)"")
+*Максимум(ВесовойКоэффициент)
+", "Показатель"))
+&gt; 1 Тогда 1
+Иначе
+Сумма(ВычислитьВыражениеСГруппировкойМассив("
+Выразить(Выбор
+Когда Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) &lt; Максимум(МинимальныйПорог) 
+Тогда 0
+Когда Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) &gt; Максимум(МаксимальныйПорог) 
+Тогда Максимум(МаксимальныйПорог)
+Иначе Выбор
+Когда Максимум(СпособАгрегации) = &amp;СпособСреднее
+Тогда Среднее(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособСумма 
+Тогда Сумма(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМинимум 
+Тогда Минимум(Значение) 
+Когда Максимум(СпособАгрегации) = &amp;СпособМаксимум 
+Тогда Максимум(Значение) 
+Конец/Максимум(ЦелевоеЗначение) Конец, ""Число(10,2)"")
+*Максимум(ВесовойКоэффициент)
+", "Показатель"))
+Конец</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ВесовойКоэффициент</dataPath>
+		<expression>Максимум(ВесовойКоэффициент)</expression>
+		<group>Показатель</group>
+	</totalField>
+	<totalField>
+		<dataPath>ВесовойКоэффициент</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("
+Максимум(ВесовойКоэффициент)
+", "Показатель"))</expression>
+	</totalField>
+	<parameter>
+		<name>ПериодМесяц</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Месяц</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>2</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Январь</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Февраль</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">3</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Март</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">4</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Апрель</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">5</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Май</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">6</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июнь</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">7</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Июль</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">8</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Август</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">9</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сентябрь</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">10</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Октябрь</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">11</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ноябрь</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">12</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декабрь</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПериодГод</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Год</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>4</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">2023</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2023</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2024</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2024</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2025</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2025</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2026</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2026</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2027</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2027</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2028</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2028</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2029</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2029</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">2030</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>2030</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПериодОценивания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период оценивания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ФорматРедактирования</dcscor:parameter>
+				<dcscor:value xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>ДФ=MMMM.yyyy</v8:content>
+					</v8:item>
+				</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+	</parameter>
+	<parameter>
+		<name>ТекущийПользователь</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущий пользователь</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Пользователи</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<expression>Пользователи.ТекущийПользователь()</expression>
+	</parameter>
+	<parameter>
+		<name>ПолныеПрава</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Полные права</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>СпособСреднее</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Способ среднее</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ЭП_СпособыАгрегации</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ЭП_СпособыАгрегации.Среднее</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СпособСумма</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Способ сумма</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ЭП_СпособыАгрегации</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ЭП_СпособыАгрегации.Сумма</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СпособМаксимум</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Способ максимум</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ЭП_СпособыАгрегации</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ЭП_СпособыАгрегации.Максимум</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СпособМинимум</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Способ минимум</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ЭП_СпособыАгрегации</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ЭП_СпособыАгрегации.Минимум</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СтатусыСотрудника</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Статусы сотрудника</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ЭП_СтатусыСотрудников</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ЭП_СтатусыСотрудников.ИспытательныйСрок</value>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ЭП_СтатусыСотрудников.Работает</value>
+		<useRestriction>true</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ВидУчетаВремени</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид учета времени</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ЭП_ВидыУчетаВремени</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.ЭП_ВидыУчетаВремени.Явка</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ПоказательФактическойВыработки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Показатель фактической выработки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.ЭП_ПоказателиЭффективностиСотрудников</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">ПланВидовХарактеристик.ЭП_ПоказателиЭффективностиСотрудников.ФактическаяВыработкаЧасов</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Расчет результативности</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Показатель.Порядок</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Показатель</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВесовойКоэффициент</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЦелевоеЗначение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Значение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентВыполнения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоэффициентВыполнения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Индекс</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Ответственный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Комментарий</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ПрофильРасчета</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>0d79cf38-dc03-4695-8886-589fe43579be</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СотрудникиПоПроекту</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>73773827-0f24-459e-ba0b-2112358e2f9b</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодМесяц</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">1</dcscor:value>
+					<dcsset:userSettingID>48d86b8f-671e-402e-8537-8c29d806e421</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодГод</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">2023</dcscor:value>
+					<dcsset:userSettingID>2e20c405-24a7-41a7-8172-618165be43b0</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ПериодОценивания</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>c3a23d0d-931f-45ff-9272-1dd874846b7d</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>Показатель.Порядок</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Античный</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionAttributesPlacement">Separately</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ПрофильРасчета</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Сотрудник</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Показатель</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>Показатель.Комментарий</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

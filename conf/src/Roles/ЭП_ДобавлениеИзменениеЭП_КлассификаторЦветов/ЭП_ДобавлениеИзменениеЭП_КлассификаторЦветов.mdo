@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b2bee394-8f24-4b1e-b26a-8d41b7cda1d1">
+  <name>ЭП_ДобавлениеИзменениеЭП_КлассификаторЦветов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение цветов</value>
+  </synonym>
+</mdclass:Role>

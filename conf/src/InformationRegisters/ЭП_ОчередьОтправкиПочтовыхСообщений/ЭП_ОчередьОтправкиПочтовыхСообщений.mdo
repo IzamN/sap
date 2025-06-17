@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8d6ad8d6-15c3-4a7e-a848-35e55db93fd6">
+  <producedTypes>
+    <selectionType typeId="baeec084-7d1b-4d7b-95a6-25e98096715e" valueTypeId="6e7eeb76-0067-4f01-91af-a8735d8f5276"/>
+    <listType typeId="8fb0254a-837e-4db7-aa62-6dc78c3767c7" valueTypeId="86e59927-2615-4e37-ab24-97b6bf67e763"/>
+    <managerType typeId="2ee6ee21-5af3-4f21-9de3-bb1380a9f6fa" valueTypeId="96de6bf0-629f-40db-ac45-c0c6b351a171"/>
+    <recordSetType typeId="39554ca5-ff77-41b9-abd3-0b42a23b2fd8" valueTypeId="65aa00c2-bcb7-4205-89d1-b61fe076a790"/>
+    <recordKeyType typeId="42f331d6-9497-4182-a559-705739861084" valueTypeId="b5b903b4-4e69-4977-b6e7-62793fa51fc8"/>
+    <recordType typeId="12447a90-e2e5-4afc-a0a6-65ed26fa0b56" valueTypeId="70d75c96-fd44-44fd-8d4d-3f5ade529f02"/>
+    <recordManagerType typeId="af288c73-7eb2-433f-afd8-a13ea0017cf9" valueTypeId="194fd6ab-241f-49b8-8009-c9261ed49193"/>
+  </producedTypes>
+  <name>ЭП_ОчередьОтправкиПочтовыхСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь отправки почтовых сообщений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e98aa64b-a58b-43f4-bb3a-8347ecd81f34">
+    <name>ПараметрыПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры письма</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fa34c955-40f2-4ab3-8aa6-998545ba79e2">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

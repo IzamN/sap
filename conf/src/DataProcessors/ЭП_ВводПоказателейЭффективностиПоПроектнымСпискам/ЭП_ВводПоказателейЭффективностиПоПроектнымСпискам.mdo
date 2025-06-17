@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3cd13451-41b0-493c-b18d-dd6c42550f4e">
+  <producedTypes>
+    <objectType typeId="e2fab4ca-365d-40a4-ab8d-191c4f1670f4" valueTypeId="ada661c3-dd56-47cc-961c-11b6cd79c894"/>
+    <managerType typeId="ca6bea31-28aa-4121-a633-85c16f9c60fe" valueTypeId="09f62cfa-57c4-455b-98b7-3fb76c4be324"/>
+  </producedTypes>
+  <name>ЭП_ВводПоказателейЭффективностиПоПроектнымСпискам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод показателей эффективности по проектным спискам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЭП_ВводПоказателейЭффективностиПоПроектнымСпискам.Form.Форма</defaultForm>
+  <forms uuid="f7a9e503-b8cb-4b9f-ae90-e2b6ef693e85">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

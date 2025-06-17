@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="761f43b6-d8e2-4ac0-8473-ae35fbf76dd9">
+  <name>ЭП_ЧтениеРегистра_ЭП_ОкладыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение регистра &quot;Оклады сотрудников&quot;</value>
+  </synonym>
+</mdclass:Role>

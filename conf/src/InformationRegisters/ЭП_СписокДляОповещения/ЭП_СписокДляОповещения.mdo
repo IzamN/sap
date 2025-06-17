@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65d806d9-24bd-4049-abb0-9cf55148fcc3">
+  <producedTypes>
+    <selectionType typeId="973071b4-1727-4de7-86af-4ad1a9506521" valueTypeId="c97f6244-b9da-4bf6-a183-9480ca890801"/>
+    <listType typeId="e1d76793-b5e2-4b66-bc85-1096152a1b83" valueTypeId="d6f1cde8-f2e5-4921-8b51-fd36769b00da"/>
+    <managerType typeId="572b47e2-43e0-400a-889c-63bb33989d8d" valueTypeId="93cfe6f2-22d4-4df9-8030-1904442ce1cd"/>
+    <recordSetType typeId="ba31f166-dc52-4404-9d8f-63bcdf4398e1" valueTypeId="bdfb9c20-2e87-4ba3-87b2-ad1522ebed11"/>
+    <recordKeyType typeId="9d98da9d-6463-4e4a-81ce-2d27fbe69dd8" valueTypeId="cf8926c1-f251-48b1-a8c5-066959aa66ba"/>
+    <recordType typeId="7f434aa8-e731-4578-8887-4f1573f54be8" valueTypeId="278cfa5f-a391-4788-b8e2-7d588248898c"/>
+    <recordManagerType typeId="c70a2116-abeb-4143-8ed2-f3a5d21fcda3" valueTypeId="79aca3aa-874a-418c-b116-8b4b8af2e311"/>
+  </producedTypes>
+  <name>ЭП_СписокДляОповещения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Список сотрудников для уведомлений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="3ac231c1-7cd6-4be6-9ece-640b51257024">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="341e6dc5-9c2e-466c-b19d-67a4055c5d3c">
+    <name>Департамент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Департамент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

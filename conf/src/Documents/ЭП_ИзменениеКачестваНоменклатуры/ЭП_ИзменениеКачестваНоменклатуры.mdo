@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f474b506-88e2-4b42-a152-1a8f3fbdfdfd">
+  <producedTypes>
+    <objectType typeId="2d182c0a-c771-41cb-b9c9-9a5d0476082d" valueTypeId="45e02365-5d2e-44ec-a949-65462bbdbe22"/>
+    <refType typeId="7287c098-8272-417c-b0f2-ec533377722d" valueTypeId="e95bddb9-81dc-4e36-a2ea-02ef85fe4b40"/>
+    <selectionType typeId="5821ab8d-3571-43cb-a93a-d6ef788a7593" valueTypeId="5ec4559b-d317-4896-9b8f-8c85df7167c8"/>
+    <listType typeId="919cf310-37ab-4f03-a16c-27698f6ec3fd" valueTypeId="30ce3f49-7cc4-4138-a0b9-9497a563d117"/>
+    <managerType typeId="4633e000-2612-4c26-981b-e7248ee94330" valueTypeId="cce37717-2e93-4183-8188-a5190d5fcd04"/>
+  </producedTypes>
+  <name>ЭП_ИзменениеКачестваНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменение качества номенклатуры</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ЭП_ИзменениеКачестваНоменклатуры.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ЭП_ИзменениеКачестваНоменклатуры.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>InformationRegister.ЭП_КачествоНоменклатуры</registerRecords>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="17df4959-48c2-40ff-b280-567d5640d68e">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9ee90af9-a268-450f-bfb3-b070339ade68">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d67ca6d1-0ba7-4619-b8bb-d7a401435418">
+    <name>СтатусДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус документа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2a04c294-2bad-40fa-903a-82a212a79190">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="f42e5ad5-cd43-41ce-90a0-e2a83cf21764">
+    <producedTypes>
+      <objectType typeId="99919598-9279-4b41-8053-848a46805780" valueTypeId="d19a71b9-cc35-4583-b6b9-a79c008a4533"/>
+      <rowType typeId="d397e4b1-7a94-4c5a-9735-91243f25f23b" valueTypeId="b7fe38a7-0102-4e68-87c9-c37cea4dadac"/>
+    </producedTypes>
+    <name>СписокНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список номенклатуры</value>
+    </synonym>
+    <attributes uuid="1a38d706-b6e9-4fe8-8993-2f14c3b1142c">
+      <name>ВидНоменклатуры</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид номенклатуры</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_ВидНоменлкатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dfbe6297-15b5-4c1f-8b16-b72d93a40d06">
+      <name>Номенклатура</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номенклатура</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_Номенклатура</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d379eff1-1e5e-4bad-9e64-c5a988627aa3">
+      <name>КачествоНоменклатуры</name>
+      <synonym>
+        <key>ru</key>
+        <value>Качество номенклатуры</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЭП_КачествоНоменклатуры</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="addd819d-1729-4731-b179-26b569ed234e">
+      <name>ИнвентарныйНомер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Инвентарный номер</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

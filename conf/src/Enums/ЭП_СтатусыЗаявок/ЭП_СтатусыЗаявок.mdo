@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0a991483-7b57-424c-adb7-ef82b50bef14">
+  <producedTypes>
+    <refType typeId="59fe9f72-5750-490a-b338-12747ce252a1" valueTypeId="d642f3ce-2cda-49ca-a7d2-760b8097e334"/>
+    <listType typeId="2c134395-a186-43bd-85ad-fbc523c272a3" valueTypeId="daa2fc9a-ccc8-48da-a868-21796f023292"/>
+    <managerType typeId="4814fd7c-2597-4d1a-957e-651c0d6aa461" valueTypeId="6444d262-f130-4dcd-8414-73b0b95d3caa"/>
+  </producedTypes>
+  <name>ЭП_СтатусыЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы заявок</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="35556583-cf06-405e-8944-6d00d84ecfb6">
+    <name>Новая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Новая</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="aef0f034-1ce8-4fb2-8e08-9afc9599478f">
+    <name>ВОчереди</name>
+    <synonym>
+      <key>ru</key>
+      <value>В очереди</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5af910bb-b83f-4cfa-905a-3d2596c76191">
+    <name>ВРаботе</name>
+    <synonym>
+      <key>ru</key>
+      <value>В работе</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e33e1412-dab1-4823-833d-02b7401e8880">
+    <name>НаПроверке</name>
+    <synonym>
+      <key>ru</key>
+      <value>На проверке</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b3ee70ed-c160-4a75-a42a-ace07862d500">
+    <name>НаСогласовании</name>
+    <synonym>
+      <key>ru</key>
+      <value>На согласовании</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="efc9fdae-44e3-446f-8839-0dd4c49e623c">
+    <name>Выполнена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выполнена</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="95162eb8-5c5e-4def-915e-5c049ad6851f">
+    <name>Отклонена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отклонена</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b5403417-61cc-4ae1-8d87-f04134b794b4">
+    <name>Отменена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменена</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4ac91fe6-62a4-47b6-9542-ca65337f9677">
+    <name>ЗапросНаОтмену</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос на отмену</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

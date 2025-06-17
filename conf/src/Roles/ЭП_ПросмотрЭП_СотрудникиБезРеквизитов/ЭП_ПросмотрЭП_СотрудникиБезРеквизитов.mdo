@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="53964e02-c1e8-4bff-884f-ced78d4d6fa4">
+  <name>ЭП_ПросмотрЭП_СотрудникиБезРеквизитов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр справочника &quot;Сотрудники&quot; без реквизитов</value>
+  </synonym>
+</mdclass:Role>

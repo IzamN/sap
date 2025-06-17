@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d239e139-e4d2-4243-89ff-047241c87ea1">
+  <producedTypes>
+    <objectType typeId="dc6acf9e-7da3-4a1a-9f54-0ef72e42590d" valueTypeId="d7cbe00d-31e7-4348-9d8c-6b660eb6358e"/>
+    <refType typeId="a9329f10-fe2c-4537-b90b-a4e23c108bbc" valueTypeId="950ead3e-675e-465c-90e2-34f0bd035d97"/>
+    <selectionType typeId="35a02dbf-febb-4199-8a94-2bdc5e95acec" valueTypeId="e59b760d-cf25-4cb4-b352-ae7c46af2697"/>
+    <listType typeId="d9e489e6-d3c4-4553-bd59-988266755951" valueTypeId="28bdb8bd-b697-43d9-9c72-3077756eea80"/>
+    <managerType typeId="ee732add-1e99-4863-9773-3e0af995768e" valueTypeId="6abc4302-9f11-4ef8-9ebd-e52a9b3cd68d"/>
+  </producedTypes>
+  <name>ЭП_ГруппыРасчетныхПрофилей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Группы расчетных профилей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭП_ГруппыРасчетныхПрофилей.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭП_ГруппыРасчетныхПрофилей.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="66b6ab1f-2e00-4fb0-9f41-cfffe2c7abbd">
+    <name>ИспользуетсяПроектныйПоказатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется проектный показатель</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e2a64c5-874d-48d5-ac80-97d837860519">
+    <name>РассчитываютсяПереработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитываются переработки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

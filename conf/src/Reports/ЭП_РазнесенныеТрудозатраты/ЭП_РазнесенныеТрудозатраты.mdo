@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c3d6541f-068f-4cc4-9397-ed69f18cf5d2">
+  <producedTypes>
+    <objectType typeId="21ebfaa4-dc4b-46ee-ac9a-8ea8b5ec02a4" valueTypeId="48c99eff-c875-4db0-97b5-f7fa12a70c9f"/>
+    <managerType typeId="cb9749e2-e3d9-4c5a-b09f-a8a0e7a4739b" valueTypeId="88160db6-b164-4dee-8f3d-12ef12769758"/>
+  </producedTypes>
+  <name>ЭП_РазнесенныеТрудозатраты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разнесенные трудозатраты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>Report.ЭП_РазнесенныеТрудозатраты.Form.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ЭП_РазнесенныеТрудозатраты.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="aaaf97d9-ffe0-429d-8af2-ddb782907ff3">
+    <name>ФормаОтчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма отчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="f102dbbf-8c76-4798-ae62-dc3b5a8faae3">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

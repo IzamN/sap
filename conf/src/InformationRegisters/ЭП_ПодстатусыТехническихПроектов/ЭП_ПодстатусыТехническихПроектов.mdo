@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2eb8ecf5-9e2b-40d0-80b4-cf16b02b6877">
+  <producedTypes>
+    <selectionType typeId="a78b992e-246b-457c-aefe-38b7d61f4237" valueTypeId="e22a13f2-7d21-497e-98c1-f84227a515d1"/>
+    <listType typeId="8f4a7e1e-31c9-4c00-b741-88d9dccfaccc" valueTypeId="c8c6c23d-ddda-4891-85ea-bdabe0c6555f"/>
+    <managerType typeId="7ebd35e9-9bb1-42ae-b9bd-87845da48bdc" valueTypeId="3114e6f5-9760-4000-9233-404055638b96"/>
+    <recordSetType typeId="b1f848cb-d121-4224-8e9b-acf31c8ce0f0" valueTypeId="8e952f39-a001-4f24-80d9-2e781a817103"/>
+    <recordKeyType typeId="b533fcc3-419a-4e2c-bb5b-2359fb3f76dd" valueTypeId="18a967ce-7b98-43cf-9684-ba765d4f7d41"/>
+    <recordType typeId="344ce33e-5f47-4266-8e9d-1cac5d2631ad" valueTypeId="e45f531c-e730-4486-9df6-49950611c3ce"/>
+    <recordManagerType typeId="87c8d4bc-30e9-4bd9-ad32-70f2bf1cdd30" valueTypeId="8e2017a6-9ace-4c14-aea9-d70f040759cb"/>
+  </producedTypes>
+  <name>ЭП_ПодстатусыТехническихПроектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подстатусы технических проектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЭП_ПодстатусыТехническихПроектов.Form.ФормаЗаписи</defaultRecordForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cc60fae7-8c17-4c07-ba32-b1de8f6df95d">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="b62c97bd-9c4b-4900-a766-3bbebf425a33">
+    <name>Подстатус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подстатус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЭП_Подстатусы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="80069f12-a446-4420-8c0e-a8020a113fb4">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="85c03ecc-8d2f-4d31-a117-92b3dc4dc9e4">
+    <name>ТехПроект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тех проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТехническиеПроекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="1c0457e5-0a52-4b40-9c17-2ed0f64b814b">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

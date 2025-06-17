@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="46188bfc-cdf4-456a-9840-ca34f1761d3c">
+  <name>ЭП_ПросмотрПодсистемыТрудозатратыКПремированию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Просмотр подсистемы трудозатраты к премированию</value>
+  </synonym>
+</mdclass:Role>

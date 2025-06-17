@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f82f725-2c2c-485c-a826-fe0c4597d95d">
+  <name>ЭП_ДобавлениеИзменениеЭП_НастройкиАдресацииДляВыполненияЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление и изменение регистра сведений &quot;Настройки адресации для выполнения заявок&quot;</value>
+  </synonym>
+</mdclass:Role>

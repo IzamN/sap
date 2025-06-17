@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97a99d3a-35bc-4468-a42e-c68893e7aae4">
+  <producedTypes>
+    <selectionType typeId="3effb5ca-5968-40f2-920e-cf6df982ab2f" valueTypeId="aa1e80b3-e0ff-4a34-8ea2-c08209211068"/>
+    <listType typeId="50bc8f30-c434-4fb3-b55a-81cc69190520" valueTypeId="e4517cf3-8c6f-497c-97a9-f9894b43eb9b"/>
+    <managerType typeId="f7be555f-8674-44b1-8706-d80b61a89c3e" valueTypeId="977cc793-e2a4-48cf-b1be-f29bbfcd1f06"/>
+    <recordSetType typeId="4c31155c-e6b3-4106-91a0-dc1eab3fc159" valueTypeId="23f62184-a8c1-4904-b5fd-e524ca78b955"/>
+    <recordKeyType typeId="4c332fd9-6fc6-4766-b4e5-92f37e7fd2db" valueTypeId="f43d69f7-f876-40cb-8cec-b7941d7a1924"/>
+    <recordType typeId="86cee930-8f74-4024-9d39-c07a7635ee8c" valueTypeId="62bfed8d-33a9-433a-a8e2-e35e4f4a329b"/>
+    <recordManagerType typeId="cc518153-ffd8-4c2f-a162-f0435c5944ce" valueTypeId="a80a2c3d-5114-4c68-8779-864e1a7edea9"/>
+  </producedTypes>
+  <name>ЭП_НастройкаУведомленийОбОтсутствииОценокУСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка уведомлений об отсутствии оценок у сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="025df683-be7e-4402-8f96-908a1d7e9640">
+    <name>УведомленияПоОценкам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уведомления по оценкам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7232b87d-b690-429e-92d0-b707de92e2cb">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

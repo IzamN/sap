@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b62496b-17d4-47c9-8ef1-d837fe26c652">
+  <name>ЭП_ПередЗаписьюСправочника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перед записью справочника</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.ЗадачиПроцесса</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ЭП_ПодпискиНаСобытия.ПередЗаписьюСправочника</handler>
+</mdclass:EventSubscription>

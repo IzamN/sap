@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23c10416-e32f-4839-8d83-dd8da8556e31">
+  <producedTypes>
+    <objectType typeId="218dfe46-8693-4ac6-8cda-13d3c14524c9" valueTypeId="e23b9140-5db3-45bf-922a-02cc7e1b4442"/>
+    <refType typeId="ee683423-d04b-4174-9e1d-4ba38b82479c" valueTypeId="4fec4660-daea-485e-9502-79028678f065"/>
+    <selectionType typeId="c9d7f443-41eb-473b-a1bd-b492ac97bdc0" valueTypeId="eefe10b9-2a76-489c-846a-90057ec30853"/>
+    <listType typeId="d53e9866-32d2-4791-8bb8-5faaece34f05" valueTypeId="ec00f882-542a-4154-89b0-d22aa36ece77"/>
+    <managerType typeId="ae3a39fd-8bdf-4024-bc1a-6ff12f814400" valueTypeId="df6e3c8c-a6e3-474b-b824-3c73c93d4190"/>
+  </producedTypes>
+  <name>ЭП_ДолжностиСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Должности сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭП_ДолжностиСотрудников.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭП_ДолжностиСотрудников.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЭП_ДолжностиСотрудников.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ЭП_ДолжностиСотрудников.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="97c83142-7439-49ff-927e-a3b61ab20ca8">
+    <name>КОД_ЗУП</name>
+    <synonym>
+      <key>ru</key>
+      <value>КОД ЗУП</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ca018d71-01f0-471a-b6fe-28f0c6c3b076">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ad702c57-fe23-4fe0-9ebb-5bacdaa154ed">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

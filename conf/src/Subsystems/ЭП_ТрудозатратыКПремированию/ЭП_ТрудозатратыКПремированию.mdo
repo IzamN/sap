@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ea8db8a5-feed-465b-8aff-39bc58bb85db">
+  <name>ЭП_ТрудозатратыКПремированию</name>
+  <synonym>
+    <key>ru</key>
+    <value>Трудозатраты к премированию</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.ЭП_ПланированиеПереработок</picture>
+  </picture>
+  <content>Report.ЭП_НакопленныеОтгулы</content>
+  <content>Report.ЭП_РассчитанныеПереработкиПоСотрудникам</content>
+  <content>Report.ЭП_ТрудозатратыКПремированиюПланФакт</content>
+  <subsystems>Документы</subsystems>
+</mdclass:Subsystem>

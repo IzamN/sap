@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d086491-624a-436b-bd66-8fddc0e44410">
+  <producedTypes>
+    <objectType typeId="5e5b3a92-78ac-4282-9923-bead0fd5818d" valueTypeId="a2772d26-9886-490f-ae6f-896c39738ed6"/>
+    <managerType typeId="7c9140d7-b544-443e-8ce6-564e4809497f" valueTypeId="08e59561-682d-41d4-84e2-516d55e3429d"/>
+  </producedTypes>
+  <name>ЭП_РаботающиеСотрудникиБезТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работающие сотрудники без трудозатрат</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЭП_РаботающиеСотрудникиБезТрудозатрат.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="60ce9f51-cc16-46da-b0bb-14f5015dc86b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

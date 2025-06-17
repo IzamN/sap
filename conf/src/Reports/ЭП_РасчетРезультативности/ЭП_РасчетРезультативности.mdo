@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7886ccd3-6487-440a-89fc-42dde2ac70a5">
+  <producedTypes>
+    <objectType typeId="52076f80-7430-4f13-90cd-8cc9f2b7cf29" valueTypeId="528b44ed-5358-4f82-9b00-86a498ab4e7a"/>
+    <managerType typeId="f5fb4c9d-2761-4a86-89b6-1bb84445ca0b" valueTypeId="e71fd488-931f-4478-9598-9f6c70662211"/>
+  </producedTypes>
+  <name>ЭП_РасчетРезультативности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет результативности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЭП_РасчетРезультативности.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="996eabbe-4add-4ed9-a86b-b46cf9ad2d43">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

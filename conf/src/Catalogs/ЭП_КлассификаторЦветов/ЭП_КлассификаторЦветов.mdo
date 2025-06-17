@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="293e5ca6-2992-4ac1-8806-9f19fbbd69a4">
+  <producedTypes>
+    <objectType typeId="24947945-3b11-4266-8ef3-093001f4ab6e" valueTypeId="74c1e4cf-1e11-4196-8f5b-2f34895670bb"/>
+    <refType typeId="4e12c2d9-3302-48fa-9bd5-56cfa92566a7" valueTypeId="5060a023-156f-426b-a474-29a05e0b5710"/>
+    <selectionType typeId="819b0740-1ecc-4a20-8b35-97b3276086fa" valueTypeId="e61f23bb-1337-4df4-9406-16dcba8fa1ff"/>
+    <listType typeId="da2b9879-845c-4344-96ba-617a941f5bbe" valueTypeId="5d2fc5ee-8165-400a-97e2-c5a749e9dbf3"/>
+    <managerType typeId="70000672-6028-47c9-a909-eac547c326b8" valueTypeId="ede7478b-222a-477d-beed-3d0487a7aa68"/>
+  </producedTypes>
+  <name>ЭП_КлассификаторЦветов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Классификатор цветов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭП_КлассификаторЦветов.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЭП_КлассификаторЦветов.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.ЭП_КлассификаторЦветов.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.ЭП_КлассификаторЦветов.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="6e52b9cd-f1a2-4000-b3de-30f93a4f67d9">
+    <name>Красный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Красный</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b7691074-ce93-4c8d-b2db-4ba426621eff">
+    <name>Зеленый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зеленый</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2c1d43b8-4113-4d27-a70b-47b9d1c3c902">
+    <name>Синий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синий</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="b780c7af-e04d-4c1f-b4f0-f6ed55b88ff5">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="24c01181-d0ec-496c-a3d3-221cd09f5e55">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5bc7b93a-5e08-44e8-b952-9796329b0771">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

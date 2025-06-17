@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ошибка</dataPath>
+			<field>Ошибка</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пользователь</dataPath>
+			<field>Пользователь</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Задача</dataPath>
+			<field>Задача</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Проект</dataPath>
+			<field>Проект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидДеятельности</dataPath>
+			<field>ВидДеятельности</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТехническийПроект</dataPath>
+			<field>ТехническийПроект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОписаниеРаботы</dataPath>
+			<field>ОписаниеРаботы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентЗагрузкиПлан</dataPath>
+			<field>ПроцентЗагрузкиПлан</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент загрузки план</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтклонениеВЧасах</dataPath>
+			<field>ОтклонениеВЧасах</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отклонение в часах</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентЗагрузкиФакт</dataPath>
+			<field>ПроцентЗагрузкиФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент загрузки факт</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧасыФакт</dataPath>
+			<field>ЧасыФакт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часы факт</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЧасыТабель</dataPath>
+			<field>ЧасыТабель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Часы табель</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ГруппаПроектов</dataPath>
+			<field>ГруппаПроектов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа проектов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Департамент</dataPath>
+			<field>Департамент</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Департамент</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИтоговоеРасхождение</dataPath>
+			<field>ИтоговоеРасхождение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итоговое расхождение</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ПериодРегистрации КАК ПериодРегистрации,
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.Сотрудник КАК Сотрудник,
+	СУММА(ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.Часы) КАК ЧасыТабель
+ПОМЕСТИТЬ ВТ_ЧасыЗаМесяц
+ИЗ
+	РегистрСведений.ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников КАК ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников
+ГДЕ
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ПериодРегистрации = НАЧАЛОПЕРИОДА(&amp;Период, МЕСЯЦ)
+
+СГРУППИРОВАТЬ ПО
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ПериодРегистрации,
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	УчетВремениОбороты.Пользователь.ЭП_Сотрудник КАК ПользовательЭП_Сотрудник,
+	УчетВремениОбороты.Проект КАК Проект,
+	УчетВремениОбороты.ДлительностьОборот / 3600 КАК ЧасыФакт
+ПОМЕСТИТЬ ВТ_ФактическиеЧасыЗаМесяц
+ИЗ
+	РегистрНакопления.УчетВремени.Обороты(НАЧАЛОПЕРИОДА(&amp;Период, МЕСЯЦ), КОНЕЦПЕРИОДА(&amp;Период, МЕСЯЦ), , ) КАК УчетВремениОбороты
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЭП_ЗагруженностьСотрудниковСрезПоследних.Сотрудник КАК Сотрудник,
+	ЭП_ЗагруженностьСотрудниковСрезПоследних.Проект КАК Проект,
+	ЭП_ЗагруженностьСотрудниковСрезПоследних.ПроцентЗагрузки КАК ПроцентЗагрузкиПлан
+ПОМЕСТИТЬ ВТ_ПлановаяНагрузка
+ИЗ
+	РегистрСведений.ЭП_ЗагруженностьСотрудников.СрезПоследних(КОНЕЦПЕРИОДА(&amp;Период, МЕСЯЦ), ) КАК ЭП_ЗагруженностьСотрудниковСрезПоследних
+ГДЕ
+	НЕ ЭП_ЗагруженностьСотрудниковСрезПоследних.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ФактическиеЧасыЗаМесяц.ПользовательЭП_Сотрудник КАК Сотрудник,
+	ВТ_ФактическиеЧасыЗаМесяц.Проект КАК Проект,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ВТ_ЧасыЗаМесяц.ЧасыТабель, 0) = 0
+			ТОГДА 0
+		ИНАЧЕ ЕСТЬNULL(ВТ_ФактическиеЧасыЗаМесяц.ЧасыФакт, 0) / ЕСТЬNULL(ВТ_ЧасыЗаМесяц.ЧасыТабель, 1) * 100
+	КОНЕЦ КАК ПроцентЗагрузкиФакт,
+	ЕСТЬNULL(ВТ_ПлановаяНагрузка.ПроцентЗагрузкиПлан, 0) КАК ПроцентЗагрузкиПлан,
+	ЕСТЬNULL(ВТ_ПлановаяНагрузка.ПроцентЗагрузкиПлан, 0) / 100 * ЕСТЬNULL(ВТ_ЧасыЗаМесяц.ЧасыТабель, 0) - ЕСТЬNULL(ВТ_ФактическиеЧасыЗаМесяц.ЧасыФакт, 0) КАК ОтклонениеВЧасах,
+	ЕСТЬNULL(ВТ_ФактическиеЧасыЗаМесяц.ЧасыФакт, 0) КАК ЧасыФакт,
+	ЕСТЬNULL(ВТ_ЧасыЗаМесяц.ЧасыТабель, 0) КАК ЧасыТабель,
+	ВТ_ФактическиеЧасыЗаМесяц.Проект.ЭП_ГруппаПроектов КАК ГруппаПроектов,
+	ВТ_ФактическиеЧасыЗаМесяц.ПользовательЭП_Сотрудник.Департамент КАК Департамент
+ПОМЕСТИТЬ ВТ_Объединение
+ИЗ
+	ВТ_ФактическиеЧасыЗаМесяц КАК ВТ_ФактическиеЧасыЗаМесяц
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЧасыЗаМесяц КАК ВТ_ЧасыЗаМесяц
+		ПО ВТ_ФактическиеЧасыЗаМесяц.ПользовательЭП_Сотрудник = ВТ_ЧасыЗаМесяц.Сотрудник
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ПлановаяНагрузка КАК ВТ_ПлановаяНагрузка
+		ПО ВТ_ФактическиеЧасыЗаМесяц.ПользовательЭП_Сотрудник = ВТ_ПлановаяНагрузка.Сотрудник
+			И ВТ_ФактическиеЧасыЗаМесяц.Проект = ВТ_ПлановаяНагрузка.Проект
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ПлановаяНагрузка.Сотрудник,
+	ВТ_ПлановаяНагрузка.Проект,
+	ВЫБОР
+		КОГДА ЕСТЬNULL(ВТ_ЧасыЗаМесяц.ЧасыТабель, 0) = 0
+			ТОГДА 0
+		ИНАЧЕ ЕСТЬNULL(ВТ_ФактическиеЧасыЗаМесяц.ЧасыФакт, 0) / ЕСТЬNULL(ВТ_ЧасыЗаМесяц.ЧасыТабель, 1) * 100
+	КОНЕЦ,
+	ЕСТЬNULL(ВТ_ПлановаяНагрузка.ПроцентЗагрузкиПлан, 0),
+	ЕСТЬNULL(ВТ_ПлановаяНагрузка.ПроцентЗагрузкиПлан, 0) / 100 * ЕСТЬNULL(ВТ_ЧасыЗаМесяц.ЧасыТабель, 0) - ЕСТЬNULL(ВТ_ФактическиеЧасыЗаМесяц.ЧасыФакт, 0),
+	ЕСТЬNULL(ВТ_ФактическиеЧасыЗаМесяц.ЧасыФакт, 0),
+	ЕСТЬNULL(ВТ_ЧасыЗаМесяц.ЧасыТабель, 0),
+	ВТ_ПлановаяНагрузка.Проект.ЭП_ГруппаПроектов,
+	ВТ_ПлановаяНагрузка.Сотрудник.Департамент
+ИЗ
+	ВТ_ПлановаяНагрузка КАК ВТ_ПлановаяНагрузка
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ФактическиеЧасыЗаМесяц КАК ВТ_ФактическиеЧасыЗаМесяц
+		ПО ВТ_ПлановаяНагрузка.Сотрудник = ВТ_ФактическиеЧасыЗаМесяц.ПользовательЭП_Сотрудник
+			И ВТ_ПлановаяНагрузка.Проект = ВТ_ФактическиеЧасыЗаМесяц.Проект
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЧасыЗаМесяц КАК ВТ_ЧасыЗаМесяц
+		ПО ВТ_ПлановаяНагрузка.Сотрудник = ВТ_ЧасыЗаМесяц.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Объединение.Сотрудник КАК Сотрудник,
+	ВТ_Объединение.Проект КАК Проект,
+	ВТ_Объединение.ПроцентЗагрузкиФакт КАК ПроцентЗагрузкиФакт,
+	ВТ_Объединение.ПроцентЗагрузкиПлан КАК ПроцентЗагрузкиПлан,
+	ВТ_Объединение.ОтклонениеВЧасах КАК ОтклонениеВЧасах,
+	ВТ_Объединение.ЧасыФакт КАК ЧасыФакт,
+	ВТ_Объединение.ЧасыТабель КАК ЧасыТабель,
+	ВТ_Объединение.ГруппаПроектов КАК ГруппаПроектов,
+	ВТ_Объединение.Департамент КАК Департамент
+ПОМЕСТИТЬ ВТ_ПредИтог
+ИЗ
+	ВТ_Объединение КАК ВТ_Объединение
+
+СГРУППИРОВАТЬ ПО
+	ВТ_Объединение.Сотрудник,
+	ВТ_Объединение.Проект,
+	ВТ_Объединение.ПроцентЗагрузкиФакт,
+	ВТ_Объединение.ПроцентЗагрузкиПлан,
+	ВТ_Объединение.ОтклонениеВЧасах,
+	ВТ_Объединение.ЧасыФакт,
+	ВТ_Объединение.ЧасыТабель,
+	ВТ_Объединение.ГруппаПроектов,
+	ВТ_Объединение.Департамент
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ПредИтог.Сотрудник КАК Сотрудник,
+	ВТ_ПредИтог.Проект КАК Проект,
+	ВТ_ПредИтог.ПроцентЗагрузкиФакт КАК ПроцентЗагрузкиФакт,
+	ВТ_ПредИтог.ПроцентЗагрузкиПлан КАК ПроцентЗагрузкиПлан,
+	ВТ_ПредИтог.ОтклонениеВЧасах КАК ОтклонениеВЧасах,
+	ВТ_ПредИтог.ЧасыФакт КАК ЧасыФакт,
+	ЕСТЬNULL(ВТ_ПредИтог.ЧасыТабель, 0) / 100 * ЕСТЬNULL(ВТ_ПредИтог.ПроцентЗагрузкиПлан, 0) КАК ЧасыТабель,
+	ВТ_ПредИтог.ГруппаПроектов КАК ГруппаПроектов,
+	ВТ_ПредИтог.Департамент КАК Департамент,
+	СУММА(ВЫБОР
+			КОГДА ВТ_ПредИтог.ПроцентЗагрузкиПлан - ВТ_ПредИтог.ПроцентЗагрузкиФакт &lt; 0
+				ТОГДА (ВТ_ПредИтог.ПроцентЗагрузкиПлан - ВТ_ПредИтог.ПроцентЗагрузкиФакт) * -1
+			ИНАЧЕ ВТ_ПредИтог.ПроцентЗагрузкиПлан - ВТ_ПредИтог.ПроцентЗагрузкиФакт
+		КОНЕЦ) КАК ИтоговоеРасхождение
+ИЗ
+	ВТ_ПредИтог КАК ВТ_ПредИтог
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ПредИтог.Сотрудник,
+	ВТ_ПредИтог.Проект,
+	ВТ_ПредИтог.ПроцентЗагрузкиФакт,
+	ВТ_ПредИтог.ПроцентЗагрузкиПлан,
+	ВТ_ПредИтог.ОтклонениеВЧасах,
+	ВТ_ПредИтог.ЧасыФакт,
+	ВТ_ПредИтог.ГруппаПроектов,
+	ВТ_ПредИтог.Департамент,
+	ЕСТЬNULL(ВТ_ПредИтог.ЧасыТабель, 0) / 100 * ЕСТЬNULL(ВТ_ПредИтог.ПроцентЗагрузкиПлан, 0)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ИтоговоеРасхождение</dataPath>
+		<expression>Сумма(ИтоговоеРасхождение)</expression>
+		<group>Сотрудник</group>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>План-факт загрузки на проектах</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Сотрудник</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ГруппаПроектов</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Проект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентЗагрузкиПлан</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентЗагрузкиФакт</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОтклонениеВЧасах</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧасыТабель</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЧасыФакт</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Сотрудник</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>97e2951e-359a-4adb-9de2-6b1bf9c9ab96</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Департамент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>001f5fc1-b069-46be-af0b-8bd61696f238</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+					<dcsset:userSettingID>5ade700a-bb19-4da1-b06c-7bb731829d32</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ОтклонениеВЧасах</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ИтоговоеРасхождение</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ГруппаПроектов</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Проект</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Процент загрузки</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ПроцентЗагрузкиПлан</dcsset:field>
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>План</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ПроцентЗагрузкиФакт</dcsset:field>
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Факт</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+							</dcsset:item>
+							<dcsset:placement>Auto</dcsset:placement>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+							<dcsset:lwsTitle>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Часы</v8:content>
+								</v8:item>
+							</dcsset:lwsTitle>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ЧасыТабель</dcsset:field>
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>План</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ЧасыФакт</dcsset:field>
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Факт</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+							</dcsset:item>
+							<dcsset:placement>Auto</dcsset:placement>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОтклонениеВЧасах</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

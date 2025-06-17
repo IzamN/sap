@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="feaef351-8dc0-4c1e-85f3-76fdc96f8229">
+  <producedTypes>
+    <selectionType typeId="9b5ac08f-685b-4b0b-8883-daed04ddcf21" valueTypeId="3c3cb34b-1f21-4e2e-afd2-0c8540740293"/>
+    <listType typeId="d24f822b-d05a-49a6-b518-7a40ad009dd8" valueTypeId="619aadb8-1206-485f-8856-bc64a4f1f65b"/>
+    <managerType typeId="96c67cf7-121f-4e16-977a-16c801c34bd8" valueTypeId="7ac9d186-99e1-45f6-86a5-88a75cc850e1"/>
+    <recordSetType typeId="a232b0c7-3804-40f1-8ae7-0b299fa53e83" valueTypeId="dad436ba-1a7e-4688-8648-ce0898eaf70b"/>
+    <recordKeyType typeId="86db186d-04a7-437c-bf6f-1b93384db332" valueTypeId="1c1f90ef-36f0-4e5d-91c7-1e830486b631"/>
+    <recordType typeId="3804cf7b-e440-4ffd-ba23-d71f11bd943a" valueTypeId="0efb0c54-9451-40be-8f4f-32a9012d4ca0"/>
+    <recordManagerType typeId="34d65bb0-949e-4c3b-bb7f-dd90de175d7b" valueTypeId="743f2ce6-a814-4fef-965e-f6731ad35ae1"/>
+  </producedTypes>
+  <name>ЭП_ОкладыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оклады сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Оклад сотрудника</value>
+  </recordPresentation>
+  <resources uuid="85e4bb30-6297-4484-b529-1f2b142f5521">
+    <name>Оклад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оклад</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="70e4d4e9-a166-4a31-a608-2099e8cb8551">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

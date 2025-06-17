@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d85683ac-f017-443e-bbe0-791f6d6b2676">
+  <producedTypes>
+    <selectionType typeId="4f33ad7a-c986-4396-903f-18649c05b798" valueTypeId="fa9588c0-1f80-4cb0-942b-f38588becb14"/>
+    <listType typeId="a9d5f803-d9d2-4d60-b524-3b24cbfb1ef3" valueTypeId="f137ba90-36bc-428c-9dfc-007f251f03dc"/>
+    <managerType typeId="a48ee9a9-6101-4364-bb63-aad26679dda8" valueTypeId="177dc83e-4cfe-436a-86fe-813242d97ce2"/>
+    <recordSetType typeId="afe23557-6487-4bc0-bc0c-85c3d72eec38" valueTypeId="c229650f-d881-48a5-9ede-e0d4b835b611"/>
+    <recordKeyType typeId="f2ffdefc-76f7-49da-9754-9eb71bf26c8e" valueTypeId="672a14af-6815-43ed-8917-59cb65dfb229"/>
+    <recordType typeId="3f3c96f5-0835-459e-860a-a598409aa269" valueTypeId="3fb3a6e8-7112-4264-b2db-8ad7853b829b"/>
+  </producedTypes>
+  <name>ЭП_ВыплатыПремийПоСопровождению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выплаты премий по сопровождению</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="5cf2a903-de63-482f-87b9-705dcb32afae">
+    <name>СуммаПоПроекту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма по проекту</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="64f382f0-f0a5-47fe-ae65-eedc7cf27ac6">
+    <name>СуммаПоЭтапу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сумма по этапу</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="5089548a-bff9-465e-b374-21d6cd40a133">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="5cabd9f1-9861-4bd0-94e6-ba0838e40da5">
+    <name>Проект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Проекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4c425030-413d-4e57-900b-52d2c56c15e3">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РазделыПроекта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="458e3eaa-916e-4860-a185-d018f4779c7e">
+    <name>ТехническийПроект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Технический проект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ТехническиеПроекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

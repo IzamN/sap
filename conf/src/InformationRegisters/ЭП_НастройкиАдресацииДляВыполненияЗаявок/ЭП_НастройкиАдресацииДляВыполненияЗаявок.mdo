@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85c79b53-58a3-4baf-a406-481a23a8aedb">
+  <producedTypes>
+    <selectionType typeId="84c79829-bebe-4a46-80ee-a6f1ed4cf7d8" valueTypeId="e14c6d84-0c18-4591-9835-221028507bbb"/>
+    <listType typeId="40f365cb-34de-4576-b07e-688869eba77a" valueTypeId="db6fda26-e63d-43f3-a073-9e8e2a0db210"/>
+    <managerType typeId="426e15d5-580e-482a-9d65-3138ccc54960" valueTypeId="e1eb8c25-7997-4e99-a140-6e05fcfb01f0"/>
+    <recordSetType typeId="9bd92ff5-efc7-4f84-b43e-eaed321f00ba" valueTypeId="8c3efcb3-a2e8-41b4-9549-6be81e35ab29"/>
+    <recordKeyType typeId="d20b5614-3762-4b84-9972-e24053d1dee3" valueTypeId="fc2c7a7b-0b32-48ba-ac1c-c411e0d57012"/>
+    <recordType typeId="628fa1dd-69e0-4139-a1dc-e81cbc53f539" valueTypeId="d04b7dda-7548-4b62-8b38-2d7c30edff27"/>
+    <recordManagerType typeId="7720fe4f-2fe2-4955-be04-2db605e186c0" valueTypeId="71fc883a-6aee-4b5a-b1b1-15b408213fc1"/>
+  </producedTypes>
+  <name>ЭП_НастройкиАдресацииДляВыполненияЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки адресации для выполнения заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ЭП_НастройкиАдресацииДляВыполненияЗаявок.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ЭП_НастройкиАдресацииДляВыполненияЗаявок.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="11ec9b22-1c99-4876-9cce-307faef322d6">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2e009017-b4c6-4057-8dd7-1feac4af30b0">
+    <name>ТипУчастникаЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип исполнителя заявок</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЭП_ИсполнителиЗаявок</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="c2d4e868-3e64-4be7-b498-fc89d3723ac3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f12b22db-0f99-4b6b-a5f6-c81858a7b688">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

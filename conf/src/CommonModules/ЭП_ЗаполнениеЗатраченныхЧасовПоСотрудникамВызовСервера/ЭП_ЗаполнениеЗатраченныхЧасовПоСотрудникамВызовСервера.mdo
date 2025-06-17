@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="467d8c60-29bb-436c-ac78-fe09e989e8ec">
+  <name>ЭП_ЗаполнениеЗатраченныхЧасовПоСотрудникамВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Затраченные часы по сотрудникам</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

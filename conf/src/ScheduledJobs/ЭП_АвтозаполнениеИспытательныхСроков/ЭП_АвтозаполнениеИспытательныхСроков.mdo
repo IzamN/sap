@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f10e2607-8027-4e7f-9a5c-5603aace7a70">
+  <name>ЭП_АвтозаполнениеИспытательныхСроков</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автозаполнение испытательных сроков</value>
+  </synonym>
+  <methodName>CommonModule.ЭП_Сотрудники.ЭП_АвтозаполнениеИспытательныхСроков</methodName>
+  <use>true</use>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

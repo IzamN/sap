@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>0:f61017d5-5031-4b17-8494-6547311225a1</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:92a5cd49-8eea-4ffe-a737-00af7396e832</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ИзмененияОбъектовТехническимиПроектами.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ИсходящиеИдеи.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.КалендарьТехническихПроектов.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:24377edf-5c4f-47e3-9fec-44bb9d1fdb16</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>Report.ПланыРеализацииТехническихПроектов.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>0:784c4d56-81df-48f1-8f98-c7bd65402d84</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+</cmi:CommandInterface>

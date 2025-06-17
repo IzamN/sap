@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="116b908c-5bbe-4157-a56a-eaf95bce6461">
+  <producedTypes>
+    <objectType typeId="85d0687b-c8e7-4099-b871-5ad35c8a7f5d" valueTypeId="61ce3bbf-fa59-44c1-adc7-0c89baa402b9"/>
+    <managerType typeId="8b5eff3d-d9e7-411d-a6e8-9f1e137778da" valueTypeId="465140b5-33be-4cb9-b71e-5d71c541ea75"/>
+  </producedTypes>
+  <name>ЭП_РассчитанныеПереработкиПоСотрудникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рассчитанные переработки по сотрудникам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.ЭП_РассчитанныеПереработкиПоСотрудникам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="42c73a7b-d0e5-4107-ba41-61b88646fb45">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

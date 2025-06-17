@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9b1a35e8-0f5c-4d9f-87a0-d220b3002d88">
+  <name>ЭП_НапоминанияОТрудозатратах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Э п напоминания о трудозатратах</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

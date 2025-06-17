@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e05a0d44-f943-4d32-b657-5c40193bca7f">
+  <producedTypes>
+    <selectionType typeId="f381ce68-9120-46d5-8566-ed40407dd66a" valueTypeId="375c1f28-5531-4386-a1ca-56e369a0cca5"/>
+    <listType typeId="580e6936-7c1d-4c7a-821b-47d50682d5e4" valueTypeId="a623b7f6-b301-4e9f-9b2d-9fdec5957426"/>
+    <managerType typeId="516db306-3757-4a2b-b24e-16c2796e6241" valueTypeId="6f6589d6-ce3c-4c40-a502-789debc113b5"/>
+    <recordSetType typeId="75e3d49c-fa56-4433-80ec-3bbcecc3d1f9" valueTypeId="4fa48aa8-1f3c-40a9-ae2d-87537bdefd5d"/>
+    <recordKeyType typeId="2b4b4a06-bf7f-4d0a-8122-71611585ff3b" valueTypeId="210c8ff5-297f-4bb9-bbc3-679233fba03c"/>
+    <recordType typeId="4f84a4e5-7ad7-4ffa-8555-440f2cbdce4b" valueTypeId="1f4006a9-e75b-43a6-ae64-de2b9fb4f7ff"/>
+    <recordManagerType typeId="ab4186b5-1e25-4423-9a8f-33ca31cae9ad" valueTypeId="c4cfee71-df28-4426-9420-a40a41709d0f"/>
+  </producedTypes>
+  <name>ЭП_ДатыВыполненияРегламентныхЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты выполнения регламентных заданий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="183ef2e5-34f4-4268-9980-f203e06e7d5e">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="92d9e9be-e3a3-41d8-8ee2-e843163ac84c">
+    <name>РегламентноеЗадание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Регламентное задание</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭП_РегламентныеЗаданияСоСтатусами</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

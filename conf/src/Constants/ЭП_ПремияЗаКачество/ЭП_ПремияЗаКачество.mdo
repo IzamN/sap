@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e10aa675-f76d-4ccb-8ded-4d2c3e6533c8">
+  <producedTypes>
+    <managerType typeId="98a5fbd8-b81f-4723-ac42-96455aeb93d4" valueTypeId="e53fa917-c25b-40b8-97d9-c968dcc3ad17"/>
+    <valueManagerType typeId="8949f7b2-3eae-4534-8c83-fc3fedf9fb26" valueTypeId="492c3eee-21ad-49f7-b9a7-e6ea2813e451"/>
+    <valueKeyType typeId="7820c4e4-4bf5-49f5-b7f2-363e279d38b9" valueTypeId="b54ecd0c-57c1-4bea-900a-133e9e496b61"/>
+  </producedTypes>
+  <name>ЭП_ПремияЗаКачество</name>
+  <synonym>
+    <key>ru</key>
+    <value>Премия за качество</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <scale>2</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

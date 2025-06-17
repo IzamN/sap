@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58f35625-f73b-44cc-b9b7-3303310d2440">
+  <producedTypes>
+    <objectType typeId="04034ad2-b8d4-4ebb-a56f-2c1c869e8a09" valueTypeId="2cb2ceb0-cacd-43a3-bb9b-45e4a4d64f8d"/>
+    <managerType typeId="d1fb1ad4-41f3-4ec2-b40c-a0f6a8c96dd7" valueTypeId="b15fc47f-05fd-4733-aff8-5c4aa31d4625"/>
+  </producedTypes>
+  <name>ЭП_ВыгрузкаФайловПоТехническимПроектам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка файлов по техническим проектам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЭП_ВыгрузкаФайловПоТехническимПроектам.Form.Форма</defaultForm>
+  <forms uuid="d819e7c5-d7b8-4905-b4f5-3b6723cb5cdb">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

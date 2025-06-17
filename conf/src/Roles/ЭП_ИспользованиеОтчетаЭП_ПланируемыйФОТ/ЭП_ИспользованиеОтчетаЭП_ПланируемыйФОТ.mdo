@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5d2a2c6-749d-4184-a32c-73b186f1cc1f">
+  <name>ЭП_ИспользованиеОтчетаЭП_ПланируемыйФОТ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование отчета &quot;Планируемый ФОТ&quot;</value>
+  </synonym>
+</mdclass:Role>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61872f9c-3627-4170-a95b-0b2f1790ddf3">
+  <producedTypes>
+    <objectType typeId="8eeadd7e-f26e-495f-b631-dae540d23168" valueTypeId="866bb9f6-ab85-4ff8-b4c3-3686aefe49a3"/>
+    <refType typeId="182f8199-dba2-42e4-af6d-0cfe1ccf9a0c" valueTypeId="c730c27e-2790-46ee-9907-52d1ad9760fd"/>
+    <selectionType typeId="9f669b11-7065-4a82-b52e-93ec5eb6d458" valueTypeId="6e915c40-fc70-4256-9f22-a407e120fa4d"/>
+    <listType typeId="1c2a4fdc-bb74-4c51-a501-f0c1ad84a325" valueTypeId="5d9a94da-8fec-459c-a492-c1f4cf28999f"/>
+    <managerType typeId="b6c12edf-c395-4b30-a630-8e82e0a3c26f" valueTypeId="855c73eb-e780-4105-82b0-fa5e7577902b"/>
+  </producedTypes>
+  <name>ЭП_ПрофилиОценивания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Профили оценивания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭП_ПрофилиОценивания.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭП_ПрофилиОценивания.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.ЭП_ПрофилиРасчетаРезультативности</owners>
+  <codeLength>10</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ЭП_ПрофилиОценивания.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.ЭП_ПрофилиОценивания.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="a09615ba-9ccf-4515-89ef-be97f3dfb1ae">
+    <name>УДАЛИТЬ_Департамент</name>
+    <synonym>
+      <key>ru</key>
+      <value>УДАЛИТЬ департамент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="37c8f489-0f4f-42a5-96b1-e42d79eb1207">
+    <producedTypes>
+      <objectType typeId="6bea2342-4d42-4dd4-b05f-49db0cc74aee" valueTypeId="5f009e19-c7ff-41f4-833d-b8a7dd275d98"/>
+      <rowType typeId="5b90efc7-5f6b-4e2f-88ef-1b854353502f" valueTypeId="bb947188-f368-4036-b49f-317f6a48f173"/>
+    </producedTypes>
+    <name>Показатели</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатели</value>
+    </synonym>
+    <attributes uuid="6209fa9d-4c47-4485-9f54-4e57d969715d">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.ЭП_ПоказателиЭффективностиСотрудников</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="a386a388-1dd9-4c48-83b7-48e8b882756e">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f6871b4e-bf64-410d-8f6a-fc875d90f8d6">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

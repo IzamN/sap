@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e2f19058-4bb2-4033-aba2-011219a82f5f">
+  <name>ЭП_КонтрольСтатусаСтажировки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль статуса стажировки</value>
+  </synonym>
+</mdclass:Role>

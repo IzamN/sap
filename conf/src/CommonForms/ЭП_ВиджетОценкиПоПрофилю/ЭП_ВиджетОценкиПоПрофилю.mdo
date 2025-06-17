@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonForm xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="21a2426a-234e-4f0a-9e5b-2e136effb865">
+  <name>ЭП_ВиджетОценкиПоПрофилю</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценки по профилю пользователя</value>
+  </synonym>
+  <usePurposes>PersonalComputer</usePurposes>
+  <usePurposes>MobileDevice</usePurposes>
+</mdclass:CommonForm>

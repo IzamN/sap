@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+			<role>
+				<dcscom:periodNumber>1</dcscom:periodNumber>
+				<dcscom:periodType>Main</dcscom:periodType>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Департамент</dataPath>
+			<field>Департамент</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодРегистрацииДень</dataPath>
+			<field>ПериодРегистрацииДень</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Долг</dataPath>
+			<field>Долг</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоследнийДеньЗаписи</dataPath>
+			<field>ПоследнийДеньЗаписи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Последний день записи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Совпадение</dataPath>
+			<field>Совпадение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Совпадение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СотрудникОтветственныйЗаКодРевью</dataPath>
+			<field>СотрудникОтветственныйЗаКодРевью</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сотрудник ответственный за код ревью</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СотрудникПрограммаОбучения</dataPath>
+			<field>СотрудникПрограммаОбучения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Программа обучения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СотрудникПрограммаОбученияТимлидер</dataPath>
+			<field>СотрудникПрограммаОбученияТимлидер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тимлидер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЭП_Сотрудники.Наименование КАК ИмяСотрудника,
+	ЭП_Сотрудники.Департамент КАК Департамент,
+	Пользователи.Ссылка КАК Пользователь,
+	ЭП_Сотрудники.Ссылка КАК Сотрудник
+ПОМЕСТИТЬ втСотрудники
+ИЗ
+	Справочник.ЭП_Сотрудники КАК ЭП_Сотрудники
+		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.Пользователи КАК Пользователи
+		ПО ЭП_Сотрудники.Ссылка = Пользователи.ЭП_Сотрудник
+ГДЕ
+	ЭП_Сотрудники.СтатусСотрудника = ЗНАЧЕНИЕ(Перечисление.ЭП_СтатусыСотрудников.Работает)
+	И НЕ ЭП_Сотрудники.ДоговорГПХ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	МАКСИМУМ(ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ПериодРегистрацииДень) КАК ПериодРегистрацииДень,
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.Сотрудник КАК Сотрудник,
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ВидУчетаВремени КАК ВидУчетаВремени
+ПОМЕСТИТЬ втТабель
+ИЗ
+	РегистрСведений.ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников КАК ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников
+ГДЕ
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.Сотрудник В
+			(ВЫБРАТЬ
+				втСотрудники.Сотрудник КАК Сотрудник
+			ИЗ
+				втСотрудники КАК втСотрудники)
+	И ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ВидУчетаВремени = ЗНАЧЕНИЕ(Справочник.ЭП_ВидыУчетаВремени.Явка)
+	И ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ПериодРегистрацииДень &lt; НАЧАЛОПЕРИОДА(&amp;ТекущаяДата, ДЕНЬ)
+
+СГРУППИРОВАТЬ ПО
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.Сотрудник,
+	ЭП_ДанныеТабельногоУчетаРабочегоВремениСотрудников.ВидУчетаВремени
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	УчетВремени.Период КАК Период,
+	УчетВремени.Пользователь КАК Пользователь,
+	втСотрудники.Сотрудник КАК Сотрудник,
+	втСотрудники.Департамент КАК Департамент,
+	втТабель.ПериодРегистрацииДень КАК ПериодРегистрацииДень,
+	втТабель.ВидУчетаВремени КАК ВидУчетаВремени,
+	ВЫБОР
+		КОГДА втТабель.ПериодРегистрацииДень = НАЧАЛОПЕРИОДА(УчетВремени.Период, ДЕНЬ)
+			ТОГДА 1
+		ИНАЧЕ 0
+	КОНЕЦ КАК Совпадение
+ПОМЕСТИТЬ втФинальная
+ИЗ
+    втСотрудники КАК втСотрудники
+        ЛЕВОЕ СОЕДИНЕНИЕ втТабель КАК втТабель
+        ПО втСотрудники.Сотрудник = втТабель.Сотрудник
+        ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.УчетВремени КАК УчетВремени
+        ПО втСотрудники.Пользователь = УчетВремени.Пользователь
+            И УчетВремени.Период МЕЖДУ &amp;Начало И &amp;Конец
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втФинальная.Сотрудник КАК Сотрудник,
+	втФинальная.Департамент КАК Департамент,
+	МАКСИМУМ(втФинальная.ПериодРегистрацииДень) КАК ПериодРегистрацииДень,
+	СУММА(втФинальная.Совпадение) КАК Совпадение,
+	МАКСИМУМ(втФинальная.Период) КАК Период
+ПОМЕСТИТЬ втФинальнаяСГруппировкой
+ИЗ
+	втФинальная КАК втФинальная
+
+СГРУППИРОВАТЬ ПО
+	втФинальная.Департамент,
+	втФинальная.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втФинальнаяСГруппировкой.Сотрудник КАК Сотрудник,
+	втФинальнаяСГруппировкой.Департамент КАК Департамент,
+	втФинальнаяСГруппировкой.Период КАК Период,
+	втФинальнаяСГруппировкой.ПериодРегистрацииДень КАК ПериодРегистрацииДень,
+	втФинальнаяСГруппировкой.Совпадение КАК Совпадение,
+	ВЫБОР
+		КОГДА втФинальнаяСГруппировкой.Совпадение &gt; 0
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ КАК Долг,
+	ВЫБОР
+		КОГДА втФинальнаяСГруппировкой.Совпадение &gt; 0
+			ТОГДА втФинальнаяСГруппировкой.ПериодРегистрацииДень
+		ИНАЧЕ втФинальнаяСГруппировкой.Период
+	КОНЕЦ КАК ПоследнийДеньЗаписи,
+	втФинальнаяСГруппировкой.Сотрудник.ОтветственныйЗаКодРевью КАК СотрудникОтветственныйЗаКодРевью,
+	втФинальнаяСГруппировкой.Сотрудник.ПрограммаОбучения КАК СотрудникПрограммаОбучения,
+	втФинальнаяСГруппировкой.Сотрудник.ПрограммаОбучения.Тимлидер КАК СотрудникПрограммаОбученияТимлидер
+ИЗ
+	втФинальнаяСГруппировкой КАК втФинальнаяСГруппировкой</query>
+	</dataSet>
+	<parameter>
+		<name>Конец</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>НАЧАЛОПЕРИОДА(ТекущаяДата(), "ДЕНЬ")</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Начало</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>НАЧАЛОПЕРИОДА(ДОБАВИТЬКДАТЕ(ТекущаяДата(), "День", -14), "ДЕНЬ") </expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ТекущаяДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущая дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>ТекущаяДата()</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Работающие сотрудники без заполненного СППР</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Департамент</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>0aa2ca9f-d206-4540-815f-244cb30f03ee</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">Долг</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					<dcsset:userSettingID>39479770-ebb6-420d-8bca-a8e9596bc0a8</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:left xsi:type="dcscor:Field">СотрудникПрограммаОбучения</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>2bd36aba-4d74-43d2-a2de-5a8157abf5e0</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Работающие сотрудники без заполненного СППР</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Сотрудник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПоследнийДеньЗаписи</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПериодРегистрацииДень</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Последний день когда необходимо заполнить СППР</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СотрудникПрограммаОбучения</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СотрудникПрограммаОбученияТимлидер</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>СотрудникОтветственныйЗаКодРевью</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>Период</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Формат</dcscor:parameter>
+								<dcscor:value xsi:type="v8:LocalStringType">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>ДФ=dd.MM.yyyy</v8:content>
+									</v8:item>
+								</dcscor:value>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
