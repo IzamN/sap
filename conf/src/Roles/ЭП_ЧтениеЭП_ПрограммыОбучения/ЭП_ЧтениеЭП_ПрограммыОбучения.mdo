@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37e08edc-c026-4eb1-90dd-766ac197456b">
-  <name>ЭП_ЧтениеЭП_ПрограммыОбучения</name>
-  <synonym>
-    <key>ru</key>
-    <value>Чтение Программы обучения</value>
-  </synonym>
-</mdclass:Role>

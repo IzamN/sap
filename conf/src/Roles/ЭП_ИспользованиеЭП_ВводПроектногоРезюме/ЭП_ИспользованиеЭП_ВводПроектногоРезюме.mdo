@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93485a07-2d8d-4961-a0b6-f6dff4a0b417">
-  <name>ЭП_ИспользованиеЭП_ВводПроектногоРезюме</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование Ввод проектного резюме</value>
-  </synonym>
-</mdclass:Role>

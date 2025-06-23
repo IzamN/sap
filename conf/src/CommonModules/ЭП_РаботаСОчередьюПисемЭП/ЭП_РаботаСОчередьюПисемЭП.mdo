@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b909e7be-07fe-4b8e-9516-1b304b7ec735">
-  <name>ЭП_РаботаСОчередьюПисемЭП</name>
-  <synonym>
-    <key>ru</key>
-    <value>Работа с очередью писем электронной почты</value>
-  </synonym>
-  <server>true</server>
-</mdclass:CommonModule>

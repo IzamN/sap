@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0620977-8b42-4773-a6ce-ae8a1f6f82b4">
-  <name>ЭП_ДобавлениеИзменениеДокумента_ЭП_КорректировкаОтгулов</name>
-  <synonym>
-    <key>ru</key>
-    <value>Добавление изменение документа &quot;Корректировка отгулов&quot;</value>
-  </synonym>
-</mdclass:Role>

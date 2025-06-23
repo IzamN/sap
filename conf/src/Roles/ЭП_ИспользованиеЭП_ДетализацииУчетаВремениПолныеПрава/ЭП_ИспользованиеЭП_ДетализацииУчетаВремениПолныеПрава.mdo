@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80c392be-1a45-4550-a239-bb7948f3235f">
-  <name>ЭП_ИспользованиеЭП_ДетализацииУчетаВремениПолныеПрава</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование отчета &quot;Детализация учета времени&quot; полные права</value>
-  </synonym>
-</mdclass:Role>

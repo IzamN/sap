@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fab3f288-974e-45fa-95a7-4cfb8562b548">
-  <name>ЭП_ПодготовкаДокументовТрудозатратыКПремированию</name>
-  <synonym>
-    <key>ru</key>
-    <value>Подготовка документов &quot;Трудозатраты к премированию&quot;</value>
-  </synonym>
-</mdclass:Role>

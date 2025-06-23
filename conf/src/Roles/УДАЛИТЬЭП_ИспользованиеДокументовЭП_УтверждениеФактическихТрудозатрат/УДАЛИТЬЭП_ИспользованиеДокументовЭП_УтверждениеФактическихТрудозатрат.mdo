@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a834073-bb07-4829-9ed7-67c03ebd8b83">
-  <name>УДАЛИТЬЭП_ИспользованиеДокументовЭП_УтверждениеФактическихТрудозатрат</name>
-  <synonym>
-    <key>ru</key>
-    <value>УДАЛИТЬ использование документов &quot;Утверждение фактических трудозатрат&quot;</value>
-  </synonym>
-</mdclass:Role>

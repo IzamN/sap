@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="476613c5-aac4-4acd-9bf7-348b95bb7c19">
-  <name>ЭП_ГлавныйАдминистраторПроекта</name>
-  <synonym>
-    <key>ru</key>
-    <value>Главный администратор проекта</value>
-  </synonym>
-</mdclass:Role>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d1dfd090-be00-4455-8191-07cba7a73588">
-  <name>ЭП_ДобавлениеИзменениеЭП_СостоянияОтправкиПочтовыхПием</name>
-  <synonym>
-    <key>ru</key>
-    <value>Добавление изменение регистра &quot;Состояния отправки почтовых пием&quot;</value>
-  </synonym>
-</mdclass:Role>

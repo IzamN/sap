@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df5c8aac-0c56-4db5-9b9e-8b7b800115e9">
-  <name>ЭП_ИспользованиеРегистраЭП_УтвержденныеПроекты</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование регистра &quot;Утвержденные проекты&quot;</value>
-  </synonym>
-</mdclass:Role>

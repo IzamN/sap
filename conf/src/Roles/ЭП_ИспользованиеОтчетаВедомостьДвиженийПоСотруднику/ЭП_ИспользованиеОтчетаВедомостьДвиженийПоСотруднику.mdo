@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f282d7db-57d4-401a-a79c-08e261834067">
-  <name>ЭП_ИспользованиеОтчетаВедомостьДвиженийПоСотруднику</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование отчета &quot;Ведомость движений по сотруднику&quot;</value>
-  </synonym>
-</mdclass:Role>

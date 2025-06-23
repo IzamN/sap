@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1bbae932-b098-4c5b-924a-5ec95bab8f77">
-  <name>ЭП_Использование_ЭП_АктированиеЭтапов</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование отчета &quot;Актирование этапов по проектам&quot;</value>
-  </synonym>
-</mdclass:Role>

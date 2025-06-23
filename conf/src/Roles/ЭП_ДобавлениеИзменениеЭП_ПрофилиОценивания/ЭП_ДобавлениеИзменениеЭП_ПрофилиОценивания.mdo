@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6509f640-5e62-4735-aefa-5b7c29d6d6e4">
-  <name>ЭП_ДобавлениеИзменениеЭП_ПрофилиОценивания</name>
-  <synonym>
-    <key>ru</key>
-    <value>Добавление и изменение Профили оценивания</value>
-  </synonym>
-</mdclass:Role>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f451a35f-0136-479f-ba1e-117f9ad8715c">
-  <name>ЭП_ИспользованиеЭП_ОтчетПоСобытиям</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование отчета по событиям</value>
-  </synonym>
-</mdclass:Role>

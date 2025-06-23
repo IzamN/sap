@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b670a85-51d3-4008-95c2-35c2e3c8893e">
-  <name>ЭП_ИспользованиеОтчетаПланФактЗагрузкиНаПроектах</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование отчета &quot;План-факт загрузки на проектах&quot;</value>
-  </synonym>
-</mdclass:Role>

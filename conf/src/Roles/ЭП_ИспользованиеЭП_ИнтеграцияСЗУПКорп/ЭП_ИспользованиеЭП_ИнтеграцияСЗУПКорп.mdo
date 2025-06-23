@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39a12a60-9b33-463d-9327-0b848e330e57">
-  <name>ЭП_ИспользованиеЭП_ИнтеграцияСЗУПКорп</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование http-сервиса &quot;Интеграция с ЗУП Корп&quot;</value>
-  </synonym>
-</mdclass:Role>

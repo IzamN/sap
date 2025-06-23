@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1265cafe-49bb-41b7-8559-1d4e06f917f4">
-  <name>ЭП_Использование_НастройкаОтветственныхЗаОценкуЭффективности_Администрация</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование обработки &quot;Настройка ответственных за оценку эффективности&quot; (Режим администрации)</value>
-  </synonym>
-</mdclass:Role>

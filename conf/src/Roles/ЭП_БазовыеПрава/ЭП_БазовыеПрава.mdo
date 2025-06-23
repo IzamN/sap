@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ed3153f-edfc-431c-8d5c-c7b4cfd95e4a">
-  <name>ЭП_БазовыеПрава</name>
-  <synonym>
-    <key>ru</key>
-    <value>Базовые права Эдит Про</value>
-  </synonym>
-</mdclass:Role>

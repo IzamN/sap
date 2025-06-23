@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c504f84c-779a-4f1d-8cc4-48a6328edd4b">
-  <name>УДАЛИТЬЭП_ИспользованиеЭП_ВводПоказателейЭффективности</name>
-  <synonym>
-    <key>ru</key>
-    <value>НЕ ИСПОЛЬЗУЕТСЯ Использование Ввод показателей эффективности</value>
-  </synonym>
-</mdclass:Role>

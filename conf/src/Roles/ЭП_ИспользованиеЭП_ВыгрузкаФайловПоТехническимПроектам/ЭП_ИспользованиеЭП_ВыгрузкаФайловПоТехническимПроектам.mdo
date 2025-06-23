@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8b25680-e58a-44df-b808-41e79f836f1b">
-  <name>ЭП_ИспользованиеЭП_ВыгрузкаФайловПоТехническимПроектам</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование обработки &quot;Выгрузка файлов по техническим проектам&quot;</value>
-  </synonym>
-</mdclass:Role>

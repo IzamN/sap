@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dabe6a74-7355-4d07-8cc8-966f172d63e4">
-  <name>ЭП_ПланированиеПереработок</name>
-  <synonym>
-    <key>ru</key>
-    <value>Планирование переработок</value>
-  </synonym>
-</mdclass:CommonPicture>

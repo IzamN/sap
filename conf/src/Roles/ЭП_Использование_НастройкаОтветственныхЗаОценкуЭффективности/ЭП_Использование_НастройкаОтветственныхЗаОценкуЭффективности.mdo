@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="589a1655-0d2a-4948-bcff-8976e933d8cb">
-  <name>ЭП_Использование_НастройкаОтветственныхЗаОценкуЭффективности</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование обработки &quot;Настройка ответственных за оценку эффективности&quot;</value>
-  </synonym>
-</mdclass:Role>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dda0633a-2fe5-46df-99d6-f8e16ed5fef1">
-  <name>ЭП_ПросмотрОтчетаНакопленныеОтгулы</name>
-  <synonym>
-    <key>ru</key>
-    <value>Просмотр очтета &quot;Накопленные отгулы&quot;</value>
-  </synonym>
-</mdclass:Role>

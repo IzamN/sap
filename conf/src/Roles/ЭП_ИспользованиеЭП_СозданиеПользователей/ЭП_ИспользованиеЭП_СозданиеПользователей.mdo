@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99ec76cd-9b1a-494f-a272-ee7ac55567f9">
-  <name>ЭП_ИспользованиеЭП_СозданиеПользователей</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование обработки &quot;Создание пользователей&quot;</value>
-  </synonym>
-</mdclass:Role>

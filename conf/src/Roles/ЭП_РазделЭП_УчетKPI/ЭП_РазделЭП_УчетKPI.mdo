@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="311e2450-1b12-4646-8c27-9d4689a532d4">
-  <name>ЭП_РазделЭП_УчетKPI</name>
-  <synonym>
-    <key>ru</key>
-    <value>Раздел Учет KPI</value>
-  </synonym>
-</mdclass:Role>

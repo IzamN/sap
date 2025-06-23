@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eea36900-c7d0-4794-bb09-147a33a8640e">
-  <name>ЭП_ИспользованиеОтчета_ЭП_ОценкаРезультативности</name>
-  <synonym>
-    <key>ru</key>
-    <value>Э п использование отчета э п оценка результативности</value>
-  </synonym>
-</mdclass:Role>

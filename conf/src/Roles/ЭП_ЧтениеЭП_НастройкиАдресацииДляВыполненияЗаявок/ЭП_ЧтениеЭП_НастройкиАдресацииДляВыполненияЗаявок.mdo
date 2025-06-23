@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="879ab4c3-1f1d-44f1-887c-a4484d3f8021">
-  <name>ЭП_ЧтениеЭП_НастройкиАдресацииДляВыполненияЗаявок</name>
-  <synonym>
-    <key>ru</key>
-    <value>Чтение регистра &quot;Настройки адресации для выполнения  заявок&quot;</value>
-  </synonym>
-</mdclass:Role>

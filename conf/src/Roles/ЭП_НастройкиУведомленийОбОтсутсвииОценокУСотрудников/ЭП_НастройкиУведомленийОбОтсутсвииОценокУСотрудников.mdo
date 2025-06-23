@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="da4e7198-f025-431b-82db-26e5441d4eb9">
-  <name>ЭП_НастройкиУведомленийОбОтсутсвииОценокУСотрудников</name>
-  <synonym>
-    <key>ru</key>
-    <value>Настройки уведомлений об отсутсвии оценок у сотрудников</value>
-  </synonym>
-</mdclass:Role>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62ce2006-2a0c-4ac4-914d-abd98c91328f">
-  <name>ЭП_ЧтениеЭП_АктПриемаПередачи</name>
-  <synonym>
-    <key>ru</key>
-    <value>Чтение документа &quot;Акт/Приема передачи&quot;</value>
-  </synonym>
-</mdclass:Role>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d04823f-dc4d-4385-849b-91db3e2363bb">
-  <name>ЭП_ИспользованиеВиджетаРегламентныхЗаданий</name>
-  <synonym>
-    <key>ru</key>
-    <value>Использование виджета регламентных заданий</value>
-  </synonym>
-</mdclass:Role>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4451973-6c5c-4fe7-baf7-01f7c04cfb47">
-  <name>ЭП_ЧтениеЭП_ЗагруженностьСотрудников</name>
-  <synonym>
-    <key>ru</key>
-    <value>Чтение Загруженность сотрудников</value>
-  </synonym>
-</mdclass:Role>
